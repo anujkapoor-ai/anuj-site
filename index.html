@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Anuj Kapoor</title>
-<meta name="description" content="Anuj Kapoor: economist, technology builder, policy adviser and founder of GreenPeople.earth and Five Benches.">
+<meta name="description" content="Anuj Kapoor: venture and product builder across technology, economics, innovation, strategy and policy. Founder of GreenPeople.earth and Five Benches.">
 <meta property="og:title" content="Anuj Kapoor">
-<meta property="og:description" content="I go where economics is being rewritten by technology, and build there.">
+<meta property="og:description" content="I go where technology is rewriting economics and markets, and build there.">
 <meta property="og:type" content="profile">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,6 +30,8 @@
   --accent-ink: #855A0E;
   --holi: #855A0E;
   --band: #16191D;
+  --charcoal: #3B4148;
+  --charcoal-ink: #F3F2ED;
   --band-ink: #F4F2EC;
   --scrim: rgba(22, 25, 29, .5);
   --glow-warm: rgba(205, 150, 55, .16);
@@ -47,7 +49,7 @@
     --paper: #101215; --surface: #181B1F; --tile: #1C2024; --tile-work: #1C2024; --tile-life: #2A241A;
     --ink: #ECEDEE; --muted: #A8AEB4; --line: #2E3339;
     --pine: #C9CED3; --pine-ink: #ECEDEE; --accent: #E2AE4E; --accent-ink: #EDC373; --holi: #EDC373;
-    --band: #2A241A; --band-ink: #F4F0E6; --scrim: rgba(0,0,0,.62);
+    --band: #2A241A; --band-ink: #F4F0E6; --charcoal: #2C3238; --charcoal-ink: #EEEDE8; --scrim: rgba(0,0,0,.62);
     --glow-warm: rgba(226, 174, 78, .08); --glow-cool: rgba(150, 160, 170, .05); --glow-holi: rgba(226, 174, 78, .05);
     --contour: #2A2F35; --contour-alpha: .55; color-scheme: dark;
   }
@@ -56,7 +58,7 @@
     --paper: #101215; --surface: #181B1F; --tile: #1C2024; --tile-work: #1C2024; --tile-life: #2A241A;
     --ink: #ECEDEE; --muted: #A8AEB4; --line: #2E3339;
     --pine: #C9CED3; --pine-ink: #ECEDEE; --accent: #E2AE4E; --accent-ink: #EDC373; --holi: #EDC373;
-    --band: #2A241A; --band-ink: #F4F0E6; --scrim: rgba(0,0,0,.62);
+    --band: #2A241A; --band-ink: #F4F0E6; --charcoal: #2C3238; --charcoal-ink: #EEEDE8; --scrim: rgba(0,0,0,.62);
     --glow-warm: rgba(226, 174, 78, .08); --glow-cool: rgba(150, 160, 170, .05); --glow-holi: rgba(226, 174, 78, .05);
     --contour: #2A2F35; --contour-alpha: .55; color-scheme: dark;
 }
@@ -93,7 +95,9 @@ a { color: inherit; }
 .coords { font: 12.5px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px 16px; }
 .coords b { color: var(--accent-ink); font-weight: 500; }
 h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size: clamp(42px, 5.6vw, 72px); line-height: 1; letter-spacing: -.015em; margin: 14px 0 8px; }
-.role { font: 500 clamp(15px, 1.6vw, 17px) var(--body); margin: 0 0 18px; }
+.role { font: 600 clamp(17px, 1.9vw, 20px) var(--body); letter-spacing: .01em; margin: 0 0 6px; }
+.domains { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 0; margin: 0 0 20px; padding: 0; list-style: none; font: 500 13.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.domains li + li::before { content: "|"; color: var(--accent); margin: 0 10px; }
 .thesis { font-family: var(--display); font-weight: 500; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.28; max-width: 30ch; text-wrap: balance; margin: 0 0 14px; }
 .thesis em { font-style: italic; color: var(--accent-ink); }
 .strap { color: var(--muted); max-width: 62ch; margin: 0 0 18px; font-size: 16.5px; }
@@ -115,7 +119,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tile.t-grey { background: color-mix(in srgb, var(--tile-work) var(--tile-alpha), transparent); }
 .tile.t-gold { background: color-mix(in srgb, var(--tile-life) var(--tile-alpha), transparent); border-color: color-mix(in srgb, var(--accent) 22%, transparent); }
 .tile.t-light { background: var(--surface); border-color: var(--line); }
-.tile.t-dark { background: #23282E; color: #F2F1EC; }
+.tile.t-dark { background: var(--charcoal); color: var(--charcoal-ink); }
 .tile.t-black { background: var(--band); color: var(--band-ink); border-color: color-mix(in srgb, var(--accent) 35%, transparent); }
 .tile > *:not(.motif) { position: relative; z-index: 1; }
 .tile .top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
@@ -126,7 +130,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tile p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.5; max-width: 34ch; padding-right: 36px; }
 .tile .go { position: absolute; right: 14px; bottom: 14px; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); display: grid; place-items: center; font-size: 14px; color: var(--ink); background: var(--surface); z-index: 2; }
 .tile .draftdot { font: 12px var(--mono); color: var(--accent-ink); white-space: nowrap; }
-.tile.t-dark .kick, .tile.t-dark p, .tile.t-dark .meta, .tile.t-black .kick, .tile.t-black p, .tile.t-black .meta { color: rgba(242, 241, 236, .78); }
+.tile.t-dark .kick, .tile.t-dark p, .tile.t-dark .meta, .tile.t-black .kick, .tile.t-black p, .tile.t-black .meta { color: color-mix(in srgb, var(--charcoal-ink) 80%, transparent); }
 .tile.t-dark .go, .tile.t-black .go { background: transparent; color: #F2F1EC; border-color: rgba(242, 241, 236, .35); }
 .tile.t-dark .draftdot, .tile.t-black .draftdot { color: #E2AE4E; }
 .tile:hover { border-color: var(--accent); }
@@ -143,7 +147,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tile.h3 .motif { height: 55%; }
 .tile.h1 .motif { top: 0; height: 100%; width: 45%; opacity: .26; }
 .hero .motif { top: auto; width: 44%; height: 60%; right: -2%; bottom: -3%; opacity: .3; }
-.tile.t-dark .motif, .tile.t-black .motif { color: #E2AE4E; opacity: .32; }
+.tile.t-dark .motif, .tile.t-black .motif { color: #E2AE4E; opacity: .4; }
 .tile.w12 .motif { width: 30%; height: 80%; top: 10%; }
 .tile.w12 p { max-width: 60ch; }
 @media (max-width: 600px) { .motif { opacity: .2 !important; width: 50%; } .hero .motif { display: none; } }
@@ -242,9 +246,9 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
       <div class="coords" id="coords"></div>
       <h1 id="name"></h1>
       <p class="role" id="role"></p>
+      <ul class="domains" id="domains" aria-label="Domains"></ul>
       <p class="thesis" id="thesis"></p>
       <p class="strap" id="strap"></p>
-      <ul class="caps" id="caps" aria-label="Capabilities"></ul>
       <div class="contact" id="contact"></div>
       <p class="worknote" id="worknote" hidden></p>
     </header>
@@ -340,7 +344,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     (d.places || []).forEach(function (p, i) { if (i) coords.appendChild(h('span', { text: '⇄' })); coords.appendChild(h('span', null, [h('b', { text: p.coord }), ' ' + p.name])); });
     $('thesis').append(d.thesis.text + ' ', h('em', { text: d.thesis.emphasis }));
     $('strap').textContent = d.strap;
-    var caps = $('caps'); (d.capabilities || []).forEach(function (c) { caps.appendChild(h('li', { text: c })); });
+    var doms = $('domains'); (d.domains || []).forEach(function (c) { doms.appendChild(h('li', { text: c })); });
     var contact = $('contact');
     if (d.email) contact.appendChild(h('button', { class: 'pill', id: 'copy-email', type: 'button', text: d.email }));
     (d.links || []).forEach(function (l) { contact.appendChild(h('a', { class: 'pill', href: l.url, target: '_blank', rel: 'noopener', text: l.label + ' ↗' })); });

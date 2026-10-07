@@ -10,18 +10,12 @@
       "name": "Shimla"
     }
   ],
-  "roleLine": "Venture builder · Technology builder · Economist · Policy & strategy",
+  "roleLine": "Venture & Product Builder",
   "thesis": {
-    "text": "I go where economics is being rewritten by technology,",
+    "text": "I go where technology is rewriting economics and markets,",
     "emphasis": "and build there."
   },
   "strap": "Right now that means making a forest as legible to markets as a bond, putting Himalayan supply chains on digital rails from loom to London, threading distributed systems through renewable energy, and building intelligence that lets a small team move at the scale of an institution. Trained as a banker, wired as a founder, and drawn into policy because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
-  "capabilities": [
-    "Venture building",
-    "Technology & AI",
-    "Economics & finance",
-    "Policy & strategy"
-  ],
   "email": "anuj.kapoor@gmail.com",
   "links": [
     {
@@ -42,7 +36,7 @@
       "tile": {
         "title": "About me",
         "meta": "The short version",
-        "teaser": "Venture builder, technologist and economist, asking one question for twenty years.",
+        "teaser": "Venture and product builder, asking one question for twenty years.",
         "w": 4,
         "h": 2,
         "motif": "contour",
@@ -123,7 +117,7 @@
         "w": 4,
         "h": 2,
         "motif": "ascent",
-        "tone": "grey"
+        "tone": "light"
       },
       "panel": {
         "kicker": "Career & ventures · 2004 → now",
@@ -182,7 +176,7 @@
         "w": 4,
         "h": 2,
         "motif": "columns",
-        "tone": "light"
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Policy & leadership · 2023 → now",
@@ -229,7 +223,7 @@
         "w": 3,
         "h": 2,
         "motif": "network",
-        "tone": "dark"
+        "tone": "light"
       },
       "panel": {
         "kicker": "Technical proficiency",
@@ -292,7 +286,7 @@
         "w": 4,
         "h": 2,
         "motif": "book",
-        "tone": "grey"
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Academic background",
@@ -341,7 +335,7 @@
         "h": 3,
         "motif": "text",
         "wideTablet": true,
-        "tone": "dark"
+        "tone": "gold"
       },
       "panel": {
         "kicker": "Publications",
@@ -526,7 +520,7 @@
         "w": 5,
         "h": 2,
         "motif": "people",
-        "tone": "gold"
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Community work",
@@ -565,7 +559,7 @@
         "h": 1,
         "motif": "music",
         "wideTablet": true,
-        "tone": "grey"
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Interests",
@@ -599,7 +593,7 @@
         "w": 12,
         "h": 2,
         "motif": "horizon",
-        "tone": "black"
+        "tone": "gold"
       },
       "panel": {
         "kicker": "What's next?",
@@ -638,5 +632,12 @@
       ]
     }
   ],
-  "hint": "Open any tile · ← → to move between them"
+  "hint": "Open any tile · ← → to move between them",
+  "domains": [
+    "Technology",
+    "Economics",
+    "Innovation",
+    "Strategy",
+    "Policy"
+  ]
 }
