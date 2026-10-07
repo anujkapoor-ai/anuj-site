@@ -35,23 +35,6 @@
   ],
   "workNote": "Open to partnerships built on shared value.",
   "footer": "London · Shimla",
-  "groups": [
-    {
-      "id": "work",
-      "title": "Work",
-      "blurb": "What I do and how I got here"
-    },
-    {
-      "id": "life",
-      "title": "Life",
-      "blurb": "The person behind it"
-    },
-    {
-      "id": "next",
-      "title": "Next",
-      "blurb": "Where I'm heading, and how I like to work"
-    }
-  ],
   "sections": [
     {
       "id": "about",
@@ -60,7 +43,10 @@
         "title": "About me",
         "meta": "The short version",
         "teaser": "Venture builder, technologist and economist, asking one question for twenty years.",
-        "size": "w4"
+        "w": 4,
+        "h": 2,
+        "motif": "contour",
+        "tone": "dark"
       },
       "panel": {
         "kicker": "About me",
@@ -134,7 +120,10 @@
         "title": "Career & ventures",
         "meta": "2004 → now",
         "teaser": "Citigroup and EFG, then Five Benches, GreenPeople.earth and Green Intelligence.",
-        "size": "w4"
+        "w": 4,
+        "h": 2,
+        "motif": "ascent",
+        "tone": "grey"
       },
       "panel": {
         "kicker": "Career & ventures · 2004 → now",
@@ -190,7 +179,10 @@
         "title": "Policy & leadership",
         "meta": "2023 → now",
         "teaser": "ESG policy advisory in Parliament, Cambridge sustainability leadership, Catalyst Now.",
-        "size": "w4"
+        "w": 4,
+        "h": 2,
+        "motif": "columns",
+        "tone": "light"
       },
       "panel": {
         "kicker": "Policy & leadership · 2023 → now",
@@ -234,7 +226,10 @@
       "tile": {
         "title": "Technical proficiency",
         "teaser": "Venture building, AI and data systems, finance and structuring, policy and strategy.",
-        "size": "w4"
+        "w": 3,
+        "h": 2,
+        "motif": "network",
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Technical proficiency",
@@ -294,7 +289,10 @@
       "tile": {
         "title": "Academic background",
         "teaser": "St. Stephen's, IIM Calcutta, the LSE and Cambridge.",
-        "size": "w4"
+        "w": 4,
+        "h": 2,
+        "motif": "book",
+        "tone": "grey"
       },
       "panel": {
         "kicker": "Academic background",
@@ -338,8 +336,12 @@
       "tile": {
         "title": "Publications",
         "teaser": "Ten pieces, 2012–2020: Bitcoin, smart money, tea, provenance and entrepreneurship.",
-        "size": "w4",
-        "meta": "2012 → 2020"
+        "meta": "2012 → 2020",
+        "w": 5,
+        "h": 3,
+        "motif": "text",
+        "wideTablet": true,
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Publications",
@@ -431,7 +433,10 @@
       "tile": {
         "title": "Experiences & stories",
         "teaser": "A few things that didn't fit on a CV.",
-        "size": "w3"
+        "w": 4,
+        "h": 2,
+        "motif": "holi",
+        "tone": "gold"
       },
       "panel": {
         "kicker": "Experiences & stories",
@@ -462,47 +467,15 @@
       ]
     },
     {
-      "id": "community",
-      "group": "life",
-      "tile": {
-        "title": "Community work",
-        "teaser": "Catalyst Now and women's self-help groups in Himachal Pradesh.",
-        "size": "w3"
-      },
-      "panel": {
-        "kicker": "Community work",
-        "title": "Building with people, not for them"
-      },
-      "blocks": [
-        {
-          "type": "rows",
-          "items": [
-            {
-              "when": "2025 – now",
-              "title": "Catalyst Now · Co-Chair, Digital Collaborative",
-              "text": "A global movement of social innovators working towards the 2030 Sustainable Development Goals."
-            },
-            {
-              "when": "2013 – now",
-              "title": "Women's self-help groups, Himachal Pradesh",
-              "text": "Organising supply, production systems and market access for rural producers."
-            },
-            {
-              "when": "2015 – 2016",
-              "title": "Inclusive entrepreneurship",
-              "text": "Writing and interviews on impact enterprise, including Huffington Post's Pioneers for Change."
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "home",
       "group": "life",
       "tile": {
         "title": "Home & family",
         "teaser": "Born and raised in the hills around Shimla, now living between there and London.",
-        "size": "w3"
+        "w": 3,
+        "h": 3,
+        "motif": "mountains",
+        "tone": "light"
       },
       "panel": {
         "kicker": "Home & family",
@@ -545,12 +518,54 @@
       ]
     },
     {
+      "id": "community",
+      "group": "life",
+      "tile": {
+        "title": "Community work",
+        "teaser": "Catalyst Now and women's self-help groups in Himachal Pradesh.",
+        "w": 5,
+        "h": 2,
+        "motif": "people",
+        "tone": "gold"
+      },
+      "panel": {
+        "kicker": "Community work",
+        "title": "Building with people, not for them"
+      },
+      "blocks": [
+        {
+          "type": "rows",
+          "items": [
+            {
+              "when": "2025 – now",
+              "title": "Catalyst Now · Co-Chair, Digital Collaborative",
+              "text": "A global movement of social innovators working towards the 2030 Sustainable Development Goals."
+            },
+            {
+              "when": "2013 – now",
+              "title": "Women's self-help groups, Himachal Pradesh",
+              "text": "Organising supply, production systems and market access for rural producers."
+            },
+            {
+              "when": "2015 – 2016",
+              "title": "Inclusive entrepreneurship",
+              "text": "Writing and interviews on impact enterprise, including Huffington Post's Pioneers for Change."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "interests",
       "group": "life",
       "tile": {
         "title": "Interests",
         "teaser": "Classical music, hiking, travel, writing and festivals.",
-        "size": "w3"
+        "w": 4,
+        "h": 1,
+        "motif": "music",
+        "wideTablet": true,
+        "tone": "grey"
       },
       "panel": {
         "kicker": "Interests",
@@ -581,8 +596,10 @@
       "tile": {
         "title": "What's next, and how I like to work",
         "teaser": "What I'm building, who I'd like to meet, and why I prefer shared value to a day rate.",
-        "size": "w12",
-        "dark": true
+        "w": 12,
+        "h": 2,
+        "motif": "horizon",
+        "tone": "black"
       },
       "panel": {
         "kicker": "What's next?",
@@ -620,5 +637,6 @@
         }
       ]
     }
-  ]
+  ],
+  "hint": "Open any tile · ← → to move between them"
 }
