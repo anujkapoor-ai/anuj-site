@@ -1,0 +1,162 @@
+{
+  "name": "Anuj Kapoor",
+  "places": [
+    { "coord": "51.5°N", "name": "London" },
+    { "coord": "32.1°N", "name": "Himachal Pradesh" }
+  ],
+  "thesis": { "text": "I go where economics is being rewritten by technology,", "emphasis": "and build there." },
+  "strap": "Economist, former structurer at Citigroup and EFG, and founder of ventures from Himalayan villages to AI for environmental markets. Board Advisor to the UK All-Party Parliamentary Group on ESG (2023–24). Currently building GreenPeople.earth and Green Intelligence.",
+  "email": "anuj.kapoor@gmail.com",
+  "links": [
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/anuj-kapoor01" },
+    { "label": "greenpeople.earth", "url": "https://www.greenpeople.earth" }
+  ],
+  "menuTitle": "Explore",
+  "footer": "London · Himachal Pradesh",
+
+  "sections": [
+    {
+      "id": "about",
+      "tile": { "kicker": "About me", "meta": "The through-line", "title": "One question, twenty years", "teaser": "How economics evolves when new technology arrives.", "size": "w6", "wideTablet": true },
+      "panel": { "kicker": "About me", "title": "One question, tested in practice for twenty years" },
+      "blocks": [
+        { "type": "lede", "text": "How does economics evolve when new technology arrives?" },
+        { "type": "p", "text": "I trained in classical economics, finance and business, then went to the LSE on purpose to study what I believed came next. I spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank." },
+        { "type": "p", "text": "In 2011–12 Satoshi Nakamoto's paper made that question real: an information system redesigning money, trust and institutions. I left banking in 2012 to follow it." },
+        { "type": "p", "text": "Since then the pattern has repeated. Find the shift early, learn its economics, technology and incentives deeply, then put it to work in a village, at a market stall, in a carbon registry or inside an AI system." },
+        { "type": "chain", "items": ["Economics", "Capital markets", "Distributed systems", "Digital identity", "Rural manufacturing", "Direct-to-consumer", "Environmental markets", "AI & data"] },
+        { "type": "p", "muted": true, "text": "I'm deep multidisciplinary rather than a generalist. I go far enough into each field to build something that works, then connect it to everything else I know." }
+      ]
+    },
+    {
+      "id": "entrepreneurship",
+      "tile": { "kicker": "Entrepreneurship", "meta": "2004 → now", "title": "Frontier moves, not job titles", "teaser": "From Citigroup's treasury desk to Green Intelligence.", "size": "w6" },
+      "panel": { "kicker": "Entrepreneurship & career · 2004 → now", "title": "Frontier moves, not job titles" },
+      "blocks": [
+        { "type": "rows", "items": [
+          { "when": "2022 – now", "title": "GreenPeople.earth · Founder Director", "text": "Decentralised data, data intelligence and fintech for environmental markets. Built Green Intelligence, an AI project-data environment that maps renewable, nature-based carbon and environmental projects against markets, regulations and registries." },
+          { "when": "2013 – now", "title": "Five Benches · Founder Director", "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe.", "tags": ["Himalayan People · textiles", "Palampore Tea", "Himachilli · foods"] },
+          { "when": "Ongoing", "title": "Festival People · Founder", "text": "AR, gaming and interactive technology." },
+          { "when": "2012 – 2013", "title": "Distributed systems research", "text": "White papers on data harvesting, intelligence and consensus for proof-of-truth systems; DLT use cases in finance, supply chains and data validation." },
+          { "when": "2008 – 2012", "title": "EFG Private Bank, Mayfair · Advisory", "text": "Cross-asset structuring, packaged products and derivatives, risk and investment-bank counterparty relationships." },
+          { "when": "2004 – 2008", "title": "Citigroup EMEA Treasury · Resident VP", "text": "Structured and traded cross-asset derivatives for Citigroup's EMEA businesses." }
+        ] }
+      ]
+    },
+    {
+      "id": "policy",
+      "tile": { "kicker": "Policy & leadership", "meta": "2023 → now", "title": "From the market to Parliament", "teaser": "The UK APPG on ESG and Cambridge sustainability leadership.", "size": "w4" },
+      "panel": { "kicker": "Policy & leadership · 2023 → now", "title": "From the market to Parliament" },
+      "blocks": [
+        { "type": "lede", "text": "Taking a builder's view of ESG into policy and leadership." },
+        { "type": "cards", "items": [
+          { "label": "Board Advisor · 2023–2024", "title": "All-Party Parliamentary Group on ESG", "text": "Advised the cross-party group of UK parliamentarians on environmental, social and governance policy." },
+          { "label": "Canopy Programme · 2024–2025", "title": "University of Cambridge", "text": "Institute for Sustainability Leadership (CISL)." },
+          { "label": "Co-Chair · 2025–now", "title": "Catalyst Now", "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals." }
+        ] },
+        { "type": "p", "muted": true, "text": "The thread is the same as in GreenPeople.earth: environmental information is fragmented, and markets, regulators and funders each need it organised differently. Policy is where those rules get written." }
+      ]
+    },
+    {
+      "id": "academic",
+      "tile": { "kicker": "Academic background", "title": "A classical core, then a technology lens", "teaser": "St. Stephen's, IIM Calcutta, the LSE, Cambridge.", "size": "w4" },
+      "panel": { "kicker": "Academic background", "title": "A classical core, then a technology lens" },
+      "blocks": [
+        { "type": "p", "text": "My MBA gave me the classical core: economics, finance and business. I went to the LSE deliberately to add a second layer, new technology and how economics itself changes with it. In 2024–25 I added a third at Cambridge: sustainability leadership." },
+        { "type": "cards", "items": [
+          { "label": "Canopy Programme · 2024–2025", "title": "University of Cambridge", "text": "Institute for Sustainability Leadership (CISL)." },
+          { "label": "MSc · 2002–2003", "title": "London School of Economics", "text": "Thesis on ICTs in economic transformation: how networks, data and digital infrastructure reshape markets and institutions." },
+          { "label": "MBA · 1999–2001", "title": "IIM Calcutta", "text": "Economics, finance and business management." },
+          { "label": "BA Hons · 1996–1999", "title": "St. Stephen's College", "text": "English Literature. Where the writing habit started." }
+        ] }
+      ]
+    },
+    {
+      "id": "technical",
+      "tile": { "kicker": "Technical proficiency", "title": "What I build with", "teaser": "Structuring, AI data systems, ledgers, commerce.", "size": "w4" },
+      "panel": { "kicker": "Technical proficiency", "title": "What I build with" },
+      "blocks": [
+        { "type": "groups", "items": [
+          { "title": "Finance & economics", "tags": ["Economic modelling", "Multi-asset structuring", "Derivatives", "Capital raising"] },
+          { "title": "Data & systems", "tags": ["AI data environments", "Data architecture", "DLT & blockchain", "Ledgers & databases", "Digital identity"] },
+          { "title": "Product & commerce", "tags": ["Product design", "UX & goal-led development", "E-commerce", "AR & gamification", "Supply chains"] },
+          { "title": "Markets", "tags": ["Carbon & nature markets", "Renewables", "Impact investment"] }
+        ] }
+      ]
+    },
+    {
+      "id": "publications",
+      "tile": { "kicker": "Publications", "title": "Writing", "teaser": "Bitcoin, smart money, tea and China.", "size": "w4" },
+      "panel": { "kicker": "Publications", "title": "Writing" },
+      "blocks": [
+        { "type": "list", "items": [
+          { "title": "Pioneers for Change: Himalayan People", "source": "Huffington Post · Dec 2015", "featured": true },
+          { "title": "Entrepreneur's Optimism Index interview", "source": "BDB UK · ACQ5 Gamechangers · Dec 2016", "featured": true },
+          { "title": "Diving Deeper into the Bitcoin Mine" },
+          { "title": "Novel Economic Systems & Smart Money" },
+          { "title": "A Storm in My Tea Cup" },
+          { "title": "China: What Next" }
+        ] },
+        { "type": "p", "muted": true, "text": "Columns on the digital economy, start-ups, blockchain and data intelligence in Medium, Data Driven Investor, The Global Journal, Confluence UK, NGO Advisor and the Commonwealth Journalists Association." }
+      ]
+    },
+    {
+      "id": "stories",
+      "draft": "Draft · add your own stories",
+      "tile": { "kicker": "Experiences & stories", "title": "Things that don't fit on a CV", "teaser": "A Mayfair exit, a village loom, a London stall.", "size": "w4" },
+      "panel": { "kicker": "Interesting experiences & stories", "title": "Things that don't fit on a CV" },
+      "blocks": [
+        { "type": "cards", "items": [
+          { "title": "From the trading floor to a white paper", "text": "Leaving a Mayfair private bank in 2012 to work on an idea most of finance still called a toy." },
+          { "title": "Village to market stall", "text": "Helping weavers move from craft to repeatable production, then flying to London to set up the stall, pitch the product and sell it face to face." },
+          { "title": "St. Gallen and Trondheim", "text": "The ISC Symposium in Switzerland and ISFiT, the international student festival in Norway." }
+        ] }
+      ]
+    },
+    {
+      "id": "community",
+      "tile": { "kicker": "Community work", "title": "Building with people, not for them", "teaser": "Catalyst Now and women's self-help groups.", "size": "w4" },
+      "panel": { "kicker": "Community work", "title": "Building with people, not for them" },
+      "blocks": [
+        { "type": "rows", "items": [
+          { "when": "2025 – now", "title": "Catalyst Now · Co-Chair, Digital Collaborative", "text": "A global movement of social innovators working towards the 2030 Sustainable Development Goals." },
+          { "when": "2013 – now", "title": "Women's self-help groups, Himachal Pradesh", "text": "Organising supply, production systems and market access for rural producers." },
+          { "when": "2015 – 2016", "title": "Inclusive entrepreneurship", "text": "Writing and interviews on impact enterprise, including Huffington Post's Pioneers for Change." }
+        ] }
+      ]
+    },
+    {
+      "id": "home",
+      "draft": "Draft · your words here",
+      "tile": { "kicker": "Home & family", "title": "Between two homes", "teaser": "London and the hills of Himachal Pradesh.", "size": "w6" },
+      "panel": { "kicker": "Home & family", "title": "Between two homes" },
+      "blocks": [
+        { "type": "lede", "text": "London and the hills of Himachal Pradesh." },
+        { "type": "p", "text": "Five Benches began from home in the Himalayas, and the work still moves between the two." },
+        { "type": "p", "muted": true, "text": "A few lines about family, where you grew up and what home means to you belong here." }
+      ]
+    },
+    {
+      "id": "interests",
+      "draft": "Draft · edit freely",
+      "tile": { "kicker": "Interests", "title": "Off the clock", "teaser": "Tea, writing, games and the mountains.", "size": "w6", "wideTablet": true },
+      "panel": { "kicker": "Interests", "title": "Off the clock" },
+      "blocks": [
+        { "type": "tags", "items": ["Tea", "Writing", "Games & AR", "The Himalaya", "Economic history"] }
+      ]
+    },
+    {
+      "id": "next",
+      "draft": "Draft · confirm what you want to say",
+      "tile": { "kicker": "What's next?", "title": "Making nature legible to markets", "teaser": "What I'm building, who I want to meet, and what I'm open to.", "size": "w12", "wideTablet": true, "dark": true },
+      "panel": { "kicker": "What's next?", "title": "The next frontier: making nature legible to markets" },
+      "blocks": [
+        { "type": "cards", "items": [
+          { "title": "Building", "text": "Taking Green Intelligence from framework to the default data layer for environmental projects, registries and funders." },
+          { "title": "Looking for", "text": "Collaborators, investors and boards working where finance, AI and climate meet." },
+          { "title": "Open to", "text": "Advisory, board and strategy roles where something new needs to be understood, then done." }
+        ] }
+      ]
+    }
+  ]
+}
