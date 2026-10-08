@@ -773,7 +773,10 @@
         },
         {
           "type": "p",
-          "text": "If you're building something worthwhile and prefer to work that way too, I'd be glad to hear from you. The email address is at the top of the page."
+          "text": "If you're building something worthwhile and prefer to work that way too, I'd be glad to hear from you."
+        },
+        {
+          "type": "email"
         }
       ]
     }
@@ -785,5 +788,11 @@
     "Innovation",
     "Strategy",
     "Policy"
-  ]
+  ],
+  "welcome": "Hi, feel free to look around, and get in touch if you'd like to chat.",
+  "contact": {
+    "endpoint": "https://formsubmit.co/ajax/anuj.kapoor@gmail.com",
+    "title": "Message Anuj",
+    "greeting": "Hi, thanks for stopping by. Leave a note here and I'll get back to you by email."
+  }
 }
