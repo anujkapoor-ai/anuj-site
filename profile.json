@@ -563,7 +563,7 @@
       "group": "life",
       "tile": {
         "title": "Interests",
-        "teaser": "Classical music, hiking, travel, writing and festivals.",
+        "teaser": "Classical music, hiking, cycling, travel, futurism and good cafés and pubs.",
         "w": 4,
         "h": 1,
         "motif": "music",
@@ -577,17 +577,20 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Trained in classical music, happiest on a mountain trail."
+          "text": "Trained in classical music, happiest on a mountain trail or a bike, and usually thinking about the future over coffee or a pint."
         },
         {
           "type": "tags",
           "items": [
             "Classical music",
             "Hiking",
+            "Cycling",
             "Travel",
+            "Futurism",
             "Writing",
             "Festivals",
-            "Games & AR"
+            "Games & AR",
+            "Cafés & pubs"
           ]
         }
       ]
