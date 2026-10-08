@@ -15,7 +15,7 @@
     "text": "I go where technology is rewriting economics and markets,",
     "emphasis": "and build there."
   },
-  "strap": "Right now that means making a forest as legible to markets as a bond, putting Himalayan supply chains on digital rails from loom to London, threading distributed systems through renewable energy, and building intelligence that lets a small team move at the scale of an institution. Trained as a banker, wired as a founder, and drawn into policy because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
+  "strap": "Right now that means making a forest as legible to markets as a bond, putting Himalayan supply chains on digital rails from loom to London, threading solar energy systems with a distributed platform, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a banker and technology strategist, wired as a founder, and drawn into policy and advisory because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
   "email": "anuj.kapoor@gmail.com",
   "links": [
     {
@@ -53,7 +53,7 @@
         },
         {
           "type": "p",
-          "text": "I trained in classical economics, finance and business, then went to the LSE to study what I believed came next. I spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
+          "text": "I trained in classical economics and business, then went to the LSE to study the future of technology at the dawn of social media, and what it would mean for social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
         },
         {
           "type": "p",
@@ -145,7 +145,7 @@
             {
               "when": "Side project",
               "title": "Festival People · Founder",
-              "text": "Built so I could celebrate Holi and other festivals with my family from wherever I happened to be. It became a small gaming app, made for the fun of it."
+              "text": "A game I designed so my family could celebrate Holi and other festivals together from wherever we were. It became a small gaming app, made for the fun of it."
             },
             {
               "when": "2012 – 2013",
@@ -191,9 +191,9 @@
           "type": "cards",
           "items": [
             {
-              "label": "Board Advisor · 2023–2024",
+              "label": "Advisor · 2023–2024",
               "title": "All-Party Parliamentary Group on ESG",
-              "text": "Advised the cross-party group of UK parliamentarians on environmental, social and governance policy."
+              "text": "Advisor to the APPG on Environment, Social and Governance at Westminster. Co-hosted its round table on voluntary carbon markets."
             },
             {
               "label": "Canopy Programme · 2024–2025",
@@ -238,6 +238,7 @@
               "tags": [
                 "Product design",
                 "UX & goal-led development",
+                "Fintech",
                 "E-commerce",
                 "Supply chains",
                 "Go-to-market"
@@ -258,6 +259,7 @@
               "title": "Economics & finance",
               "tags": [
                 "Economic modelling",
+                "Financial structuring",
                 "Multi-asset structuring",
                 "Derivatives",
                 "Capital raising",
@@ -267,6 +269,7 @@
             {
               "title": "Policy & strategy",
               "tags": [
+                "Digital strategy",
                 "ESG policy advisory",
                 "Carbon & nature markets",
                 "Renewables",
@@ -393,21 +396,21 @@
             {
               "title": "Interview: Cass Business School Entrepreneurs Network",
               "source": "CEN, London · 5 Mar 2015",
-              "url": "http://www.cen.life/meet-the-entrepreneurs-anuj-kapoor-founding/",
+              "url": "https://web.archive.org/web/20151001064035/http://www.cen.life/meet-the-entrepreneurs-anuj-kapoor-founding/",
               "text": "Challenges and opportunities for entrepreneurs, compared across cities.",
               "featured": true
             },
             {
               "title": "Diving Deeper into the Bitcoin Mine",
               "source": "The Global Journal · 26 Dec 2013",
-              "url": "http://theglobaljournal.net/article/view/1157/",
+              "url": "https://web.archive.org/web/20140802215607/http://theglobaljournal.net/article/view/1157/",
               "text": "Bitcoin as a means of transaction and a store of value, and what JP Morgan's patent filing might mean for payment systems.",
               "featured": true
             },
             {
               "title": "China: What Next",
               "source": "Commonwealth Journalists Association · 3 Feb 2013",
-              "url": "http://commonwealthjournalists.org/cja-seminar-report-china-2013-what-next/",
+              "url": "https://web.archive.org/web/20130218005549/http://commonwealthjournalists.org/cja-seminar-report-china-2013-what-next/",
               "text": "Report on the CJA UK seminar at Senate House, University of London: China's political system, its role in Africa, its economy and press freedom.",
               "featured": true
             },
@@ -426,7 +429,7 @@
       "draft": "Draft · add your own stories",
       "tile": {
         "title": "Experiences & stories",
-        "teaser": "A few things that didn't fit on a CV.",
+        "teaser": "Laptop thieves, a Mayfair exit, a village loom and a London stall.",
         "w": 4,
         "h": 2,
         "motif": "holi",
@@ -441,8 +444,14 @@
           "type": "cards",
           "items": [
             {
+              "title": "Saucepan and three bananas",
+              "text": "A personal story of chasing a gang of laptop thieves around London.",
+              "url": "https://medium.com/@anuj.kapoor/saucepan-and-three-bananas-a-personal-story-of-chasing-a-gang-of-laptop-theives-around-london-c50c89ae7735",
+              "label": "Medium"
+            },
+            {
               "title": "Holi from anywhere",
-              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I built Festival People. It ended up as a small gaming app, made purely for fun."
+              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I designed Festival People. It ended up as a small gaming app, made purely for fun."
             },
             {
               "title": "From the trading floor to a white paper",
@@ -495,19 +504,19 @@
             },
             {
               "label": "Older brother",
-              "title": "Writing",
-              "text": "A writer and researcher."
+              "title": "Writing & research",
+              "text": "A writer and market researcher."
             }
           ]
         },
         {
           "type": "p",
-          "text": "I'm married to a software consultant, and we live between London and Shimla."
+          "text": "My partner is a software consultant, and we live between London and Shimla."
         },
         {
           "type": "p",
           "muted": true,
-          "text": "Home is also where the work began: Five Benches started in the Himalayas, and Festival People was built so I could celebrate Holi with my family from wherever I happened to be."
+          "text": "Many of my creative ventures began by connecting back to home and family. Himalayan People started as a way to work with and support communities close to where I was born, and Festival People is a game I designed so we could celebrate festivals together from wherever we were."
         }
       ]
     },
@@ -613,7 +622,7 @@
             },
             {
               "title": "Open to",
-              "text": "Advisory, board and strategy roles where something new needs to be understood, then done."
+              "text": "Advisory, board and strategy roles where something new needs to be understood, then built."
             }
           ]
         },

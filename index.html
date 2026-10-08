@@ -76,6 +76,7 @@ a { color: inherit; }
 /* Mosaic: 12 columns, tiles of different widths and heights packed densely */
 .mosaic { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-auto-rows: minmax(100px, auto); grid-auto-flow: dense; gap: 12px; }
 .mosaic > * { min-width: 0; }
+.main-col { min-width: 0; }
 .w3 { grid-column: span 3; } .w4 { grid-column: span 4; } .w5 { grid-column: span 5; } .w8 { grid-column: span 8; } .w12 { grid-column: span 12; }
 .h1 { grid-row: span 1; } .h2 { grid-row: span 2; } .h3 { grid-row: span 3; } .h6 { grid-row: span 6; }
 @media (max-width: 960px) {
@@ -213,6 +214,8 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .mini { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 4px; align-content: start; }
 .mini h3 { font-family: var(--display); font-weight: 600; font-size: 17px; line-height: 1.25; margin: 0; }
 .mini .yr { font: 12.5px var(--mono); color: var(--muted); }
+.mini h3 a { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.mini h3 a:hover { color: var(--accent-ink); }
 .mini p { margin: 0; color: var(--muted); font-size: 16px; }
 .panel.dark .mini { border-color: color-mix(in srgb, var(--band-ink) 22%, transparent); }
 .panel.dark .mini h3 { color: var(--accent); }
@@ -233,6 +236,40 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .draft { justify-self: start; font: 11.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--accent-ink); border: 1px dashed var(--accent); border-radius: 4px; padding: 3px 8px; }
 .panel.dark .draft { color: var(--accent); }
 .loading { color: var(--muted); font: 13px var(--mono); }
+/* Gold tree in the right margin, outside the tiles; leaves fall as tokens */
+.tree-rail { display: none; }
+@media (min-width: 1240px) {
+  .wrap { max-width: 1420px; display: grid; grid-template-columns: minmax(0, 1fr) 200px; column-gap: 28px; }
+  .tree-rail { display: block; position: relative; }
+}
+.tree-sticky { position: sticky; top: 28px; width: 100%; aspect-ratio: 200 / 560; }
+.tree-sticky svg.tree { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.tree .limb { fill: none; stroke: url(#gold-sheen); stroke-linecap: round; stroke-linejoin: round; }
+.tree .leaf { fill: color-mix(in srgb, var(--accent) 18%, transparent); stroke: url(#gold-sheen); stroke-width: 1.1; }
+.tree .ground { stroke: url(#gold-sheen); stroke-width: 1; opacity: .5; }
+.token-leaf { position: absolute; width: 13%; aspect-ratio: 24 / 30; opacity: 0; pointer-events: none; }
+.token-leaf svg { width: 100%; height: 100%; display: block; overflow: visible; filter: drop-shadow(0 1px 2px rgba(198, 138, 38, .35)); }
+.token-leaf .lf { fill: color-mix(in srgb, var(--accent) 22%, var(--surface)); stroke: var(--accent); stroke-width: 1.3; }
+.token-leaf .tk { fill: none; stroke: var(--accent-ink); stroke-width: 1.2; }
+.token-leaf .vein { stroke: var(--accent); stroke-width: .8; }
+.tl1 { left: 14%; top: 25%; --dx: 22px; --dy: 360px; animation: fall 12s ease-in-out 0s infinite; }
+.tl2 { left: 74%; top: 22%; --dx: -38px; --dy: 380px; animation: fall 14s ease-in-out 4.5s infinite; }
+.tl3 { left: 86%; top: 34%; --dx: -20px; --dy: 300px; animation: fall 13s ease-in-out 9s infinite; }
+@keyframes fall {
+  0%   { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  8%   { opacity: 1; }
+  25%  { transform: translate(calc(var(--dx) * .25 + 10px), calc(var(--dy) * .25)) rotate(35deg); }
+  50%  { transform: translate(calc(var(--dx) * .5 - 10px), calc(var(--dy) * .5)) rotate(-25deg); }
+  75%  { transform: translate(calc(var(--dx) * .75 + 8px), calc(var(--dy) * .75)) rotate(30deg); }
+  88%  { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(80deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .token-leaf { animation: none; opacity: 1; }
+  .tl1 { transform: translate(14px, 160px) rotate(30deg); }
+  .tl2 { transform: translate(-20px, 260px) rotate(-20deg); }
+  .tl3 { display: none; }
+}
 footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 </style>
 </head>
@@ -240,6 +277,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
 
 <canvas id="terrain" aria-hidden="true"></canvas>
 <div class="wrap">
+  <div class="main-col">
   <p class="hint" id="hint"></p>
   <main class="mosaic" id="mosaic">
     <header class="hero w8 h6" id="hero">
@@ -254,6 +292,55 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     </header>
   </main>
   <footer><span id="copyright"></span><span id="footer-note"></span></footer>
+  </div>
+  <aside class="tree-rail" aria-hidden="true">
+    <div class="tree-sticky">
+      <svg class="tree" viewBox="0 0 200 560" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="gold-sheen" gradientUnits="userSpaceOnUse" x1="-60" y1="0" x2="140" y2="200">
+            <stop offset="0" stop-color="#9C6B1E"/>
+            <stop offset=".42" stop-color="#D9A441"/>
+            <stop offset=".5" stop-color="#FFF0BF"/>
+            <stop offset=".58" stop-color="#D9A441"/>
+            <stop offset="1" stop-color="#9C6B1E"/>
+            <animateTransform attributeName="gradientTransform" type="translate" values="-160 -200; 220 400; -160 -200" dur="9s" repeatCount="indefinite"/>
+          </linearGradient>
+        </defs>
+        <g class="limb" stroke-width="3">
+          <path d="M100 520 C 97 460, 104 400, 100 330 C 97 290, 102 260, 100 230"/>
+        </g>
+        <g class="limb" stroke-width="1.8">
+          <path d="M100 330 C 82 312, 62 300, 40 270"/>
+          <path d="M100 300 C 125 285, 146 270, 165 240"/>
+          <path d="M100 262 C 86 242, 70 220, 55 190"/>
+          <path d="M100 248 C 118 228, 130 205, 140 175"/>
+          <path d="M100 230 C 100 205, 98 185, 100 150"/>
+          <path d="M100 360 C 82 345, 72 325, 60 300"/>
+          <path d="M100 350 C 120 335, 136 310, 150 280"/>
+          <path d="M100 410 C 86 398, 72 384, 60 362"/>
+          <path d="M100 400 C 116 388, 130 372, 142 350"/>
+          <path d="M100 285 C 78 270, 66 250, 70 225"/>
+          <path d="M100 275 C 122 262, 134 245, 132 218"/>
+        </g>
+        <g class="limb" stroke-width="1.1">
+          <path d="M40 270 C 30 260, 25 250, 20 235"/>
+          <path d="M55 190 C 45 180, 40 170, 38 155"/>
+          <path d="M140 175 C 150 165, 156 152, 158 140"/>
+          <path d="M165 240 C 175 230, 182 220, 186 205"/>
+          <path d="M100 150 C 92 135, 88 125, 86 110"/>
+          <path d="M100 150 C 108 135, 114 125, 118 112"/>
+          <path d="M100 520 C 85 523, 70 526, 52 522"/>
+          <path d="M100 520 C 115 523, 132 526, 150 522"/>
+        </g>
+        <path class="leaf" transform="translate(20 235) rotate(-35)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(38 155) rotate(-25)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(158 140) rotate(25)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(186 205) rotate(35)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(86 110) rotate(-15)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(118 112) rotate(15)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(40 270) rotate(-50)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(140 175) rotate(20)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(100 150) rotate(0)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(165 240) rotate(45)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(55 190) rotate(-30)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(60 300) rotate(-60)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(150 280) rotate(55)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/>
+        <path class="leaf" transform="translate(60 362) rotate(-55)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(142 350) rotate(50)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(70 225) rotate(-10)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(132 218) rotate(10)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(80 330) rotate(-70)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/><path class="leaf" transform="translate(124 318) rotate(65)" d="M0 0 C 5 -5, 6 -12, 0 -18 C -6 -12, -5 -5, 0 0 Z"/>
+        <line class="ground" x1="20" y1="528" x2="180" y2="528"/>
+      </svg>
+      <span class="token-leaf tl1"><svg viewBox="0 0 24 30"><path class="lf" d="M12 29 C 22 22, 24 10, 12 1 C 0 10, 2 22, 12 29 Z"/><line class="vein" x1="12" y1="27" x2="12" y2="4"/><polygon class="tk" points="12,10 16,12.5 16,17.5 12,20 8,17.5 8,12.5"/></svg></span>
+      <span class="token-leaf tl2"><svg viewBox="0 0 24 30"><path class="lf" d="M12 29 C 22 22, 24 10, 12 1 C 0 10, 2 22, 12 29 Z"/><line class="vein" x1="12" y1="27" x2="12" y2="4"/><polygon class="tk" points="12,10 16,12.5 16,17.5 12,20 8,17.5 8,12.5"/></svg></span>
+      <span class="token-leaf tl3"><svg viewBox="0 0 24 30"><path class="lf" d="M12 29 C 22 22, 24 10, 12 1 C 0 10, 2 22, 12 29 Z"/><line class="vein" x1="12" y1="27" x2="12" y2="4"/><polygon class="tk" points="12,10 16,12.5 16,17.5 12,20 8,17.5 8,12.5"/></svg></span>
+    </div>
+  </aside>
 </div>
 
 <div class="scrim" id="scrim" hidden></div>
@@ -311,7 +398,8 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     },
     cards: function (b) {
       return h('div', { class: 'cards2' }, b.items.map(function (c) {
-        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', { text: c.title }), c.text ? h('p', { text: c.text }) : null]);
+        var t = c.url ? h('a', { href: c.url, target: '_blank', rel: 'noopener', text: c.title + ' ↗' }) : c.title;
+        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', null, [t]), c.text ? h('p', { text: c.text }) : null]);
       }));
     },
     groups: function (b) { return h('div', { class: 'groups' }, b.items.map(function (g) { return h('div', null, [h('h3', { text: g.title }), tagList(g.tags)]); })); },
@@ -435,6 +523,10 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
   var sx = null;
   panel.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
   panel.addEventListener('touchend', function (e) { if (sx === null) return; var dx = e.changedTouches[0].clientX - sx; if (Math.abs(dx) > 70) step(dx < 0 ? 1 : -1); sx = null; });
+
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    Array.prototype.forEach.call(document.querySelectorAll('.tree animateTransform'), function (a) { a.remove(); });
+  }
 
   function wireEmail() {
     var btn = $('copy-email'); if (!btn) return;
