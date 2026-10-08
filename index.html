@@ -153,7 +153,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tile.w12 p { max-width: 60ch; }
 @media (max-width: 600px) { .motif { opacity: .2 !important; width: 50%; } .hero .motif { display: none; } }
 .tile.has-cover { color: #F4F6F8; background-size: cover; background-position: center; }
-.tile.has-cover::before { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(14, 18, 22, .2), rgba(14, 18, 22, .78)); }
+.tile.has-cover::before { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(14, 18, 22, .62) 0%, rgba(14, 18, 22, .38) 45%, rgba(14, 18, 22, .84) 100%); }
 .tile.has-cover .kick, .tile.has-cover p, .tile.has-cover .meta { color: rgba(244, 246, 248, .86); }
 .tile.has-cover .motif { display: none; }
 .hint { font: 12px var(--mono); color: var(--muted); text-align: right; margin: 0 0 10px; }
@@ -231,8 +231,17 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .media figure { margin: 0; display: grid; gap: 6px; min-width: 0; }
 .media img, .media video, .media iframe { width: 100%; max-width: 100%; border-radius: 10px; border: 1px solid var(--line); background: var(--paper); display: block; }
 .media iframe { aspect-ratio: 16 / 9; height: auto; }
-.media figcaption { font: 12.5px var(--mono); color: var(--muted); }
+.media figcaption { font: 14px/1.45 var(--body); color: var(--muted); }
 .media.single { grid-template-columns: 1fr; }
+.media.gallery { display: block; columns: 2 240px; column-gap: 14px; }
+.media.gallery figure { break-inside: avoid; margin: 0 0 14px; }
+.media .shot { display: block; }
+.media .shot img { transition: transform .3s ease; }
+.media .shot:hover img { transform: scale(1.01); }
+.media iframe.podcast { aspect-ratio: auto; height: 175px; border-radius: 12px; }
+.media figcaption a { color: var(--accent-ink); text-underline-offset: 3px; }
+.media figure.is-youtube, .media figure.is-podcast { grid-column: 1 / -1; }
+.p-subhead { font: 600 13px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); margin: 6px 0 -6px; }
 .draft { justify-self: start; font: 11.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--accent-ink); border: 1px dashed var(--accent); border-radius: 4px; padding: 3px 8px; }
 .panel.dark .draft { color: var(--accent); }
 .loading { color: var(--muted); font: 13px var(--mono); }
@@ -388,6 +397,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     },
     groups: function (b) { return h('div', { class: 'groups' }, b.items.map(function (g) { return h('div', null, [h('h3', { text: g.title }), tagList(g.tags)]); })); },
     tags: function (b) { return tagList(b.items); },
+    subhead: function (b) { return h('p', { class: 'p-subhead', text: b.text }); },
     list: function (b) {
       return h('ul', { class: 'pubs' }, b.items.map(function (it) {
         var title = it.url ? h('a', { href: it.url, target: '_blank', rel: 'noopener', text: it.title + ' ↗' }) : it.title;
@@ -395,12 +405,15 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
       }));
     },
     media: function (b) {
-      return h('div', { class: 'media' + (b.items.length === 1 ? ' single' : '') }, b.items.map(function (m) {
+      var cls = 'media' + (b.layout === 'gallery' ? ' gallery' : '') + (b.items.length === 1 ? ' single' : '');
+      return h('div', { class: cls }, b.items.map(function (m) {
         var el;
         if (m.type === 'video') el = h('video', { src: m.src, controls: '', preload: 'metadata', playsinline: '', poster: m.poster });
         else if (m.type === 'youtube') el = h('iframe', { src: 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(m.id), title: m.caption || 'Video', allow: 'encrypted-media; picture-in-picture', allowfullscreen: '', loading: 'lazy' });
-        else el = h('img', { src: m.src, alt: m.alt || '', loading: 'lazy' });
-        return h('figure', null, [el, m.caption ? h('figcaption', { text: m.caption }) : null]);
+        else if (m.type === 'podcast') el = h('iframe', { class: 'podcast', src: m.embed, title: m.caption || 'Podcast', allow: 'autoplay *; encrypted-media *; clipboard-write', sandbox: 'allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation', loading: 'lazy' });
+        else el = h('a', { href: m.src, target: '_blank', rel: 'noopener', class: 'shot' }, [h('img', { src: m.src, alt: m.alt || '', loading: 'lazy' })]);
+        var cap = m.caption ? h('figcaption', null, [m.caption, m.url ? ' · ' : null, m.url ? h('a', { href: m.url, target: '_blank', rel: 'noopener', text: (m.linkText || 'Open') + ' ↗' }) : null]) : null;
+        return h('figure', { class: m.type ? 'is-' + m.type : null }, [el, cap]);
       }));
     }
   };

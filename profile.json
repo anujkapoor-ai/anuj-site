@@ -172,11 +172,12 @@
       "tile": {
         "title": "Policy & leadership",
         "meta": "2023 → now",
-        "teaser": "ESG policy advisory in Parliament, Cambridge sustainability leadership, Catalyst Now.",
+        "teaser": "ESG advisory at Westminster, Cambridge CISL, and talks from Verbier and Helsinki to Namibia, Singapore and the WEF.",
         "w": 4,
         "h": 2,
         "motif": "columns",
-        "tone": "dark"
+        "tone": "dark",
+        "cover": "media/verbier-summit.webp"
       },
       "panel": {
         "kicker": "Policy & leadership · 2023 → now",
@@ -204,6 +205,51 @@
               "label": "Co-Chair · 2025–now",
               "title": "Catalyst Now",
               "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals."
+            }
+          ]
+        },
+        {
+          "type": "lede",
+          "text": "Speaking and convenings"
+        },
+        {
+          "type": "rows",
+          "kind": "talks",
+          "items": [
+            {
+              "when": "Roundtable",
+              "title": "World Economic Forum",
+              "text": "Roundtable on sustainable jobs in the AI economy."
+            },
+            {
+              "when": "Panel · 2025",
+              "title": "Impact Week, Singapore",
+              "text": "Panel on impact measurement."
+            },
+            {
+              "when": "Talk · Oct 2024",
+              "title": "AfRP-9, Windhoek, Namibia",
+              "text": "Presentation on using technology to create natural assets in Africa, at the Africa Regional Platform for Disaster Risk Reduction, organised by the UN Office for Disaster Risk Reduction and the African Union Commission."
+            },
+            {
+              "when": "Summit",
+              "title": "Global Sustainability and Finance Summit, Verbier",
+              "text": "Presented at the summit in Verbier, Switzerland."
+            },
+            {
+              "when": "Presentation",
+              "title": "Global Growth & Circular Futures, Helsinki",
+              "text": "Presentation on inclusive trade at the University of Helsinki, with the Cambridge Institute for Sustainability Leadership (CISL) and JETRO, the Japan External Trade Organization."
+            },
+            {
+              "when": "Talk",
+              "title": "LCCA, London",
+              "text": "Talk on sustainability."
+            },
+            {
+              "when": "Podcast",
+              "title": "Deanna's Dialogues, Faegre Drinker",
+              "text": "Navigating carbon sustainability: compliance and voluntary carbon markets."
             }
           ]
         },
@@ -478,7 +524,8 @@
         "w": 3,
         "h": 3,
         "motif": "mountains",
-        "tone": "light"
+        "tone": "light",
+        "cover": "media/shimla-garden.webp"
       },
       "panel": {
         "kicker": "Home & family",
@@ -488,6 +535,16 @@
         {
           "type": "lede",
           "text": "Born in Shimla, Himachal Pradesh, into a family of professionals, and raised in the mountains and valleys around it."
+        },
+        {
+          "type": "media",
+          "items": [
+            {
+              "src": "media/shimla-garden.webp",
+              "alt": "Anuj in a Himachali cap holding a cup of tea in a garden",
+              "caption": "Tea in the garden, in a Himachali cap"
+            }
+          ]
         },
         {
           "type": "cards",
@@ -598,29 +655,103 @@
     {
       "id": "media",
       "group": "life",
-      "draft": "Draft · photos and video to come",
       "tile": {
         "title": "Media",
         "meta": "Photos & video",
-        "teaser": "Pictures and films from the hills, the markets and the work.",
+        "teaser": "Talks, panels, a podcast and a few moments in between.",
         "w": 6,
         "h": 2,
         "motif": "frames",
-        "tone": "light"
+        "tone": "light",
+        "cover": "media/helsinki-global-growth-circular-futures.webp"
       },
       "panel": {
         "kicker": "Media",
-        "title": "Pictures and moving pictures"
+        "title": "Talks, panels and moments in between"
       },
       "blocks": [
         {
-          "type": "lede",
-          "text": "Photos and video from Shimla, the markets, the ventures and the talks."
+          "type": "subhead",
+          "text": "Watch and listen"
         },
         {
-          "type": "p",
-          "muted": true,
-          "text": "Coming soon."
+          "type": "media",
+          "items": [
+            {
+              "type": "youtube",
+              "id": "cJZPXWJ1PHc",
+              "caption": "Talk on sustainability at LCCA, London",
+              "url": "https://www.youtube.com/watch?v=cJZPXWJ1PHc",
+              "linkText": "YouTube"
+            },
+            {
+              "type": "podcast",
+              "embed": "https://embed.podcasts.apple.com/us/podcast/intersection-of-compliance-carbon-voluntary-carbon/id1759561324?i=1000677659416",
+              "caption": "Deanna's Dialogues, Faegre Drinker (California): navigating carbon sustainability, compliance and voluntary carbon markets",
+              "url": "https://podcasts.apple.com/us/podcast/intersection-of-compliance-carbon-voluntary-carbon/id1759561324?i=1000677659416",
+              "linkText": "Apple Podcasts"
+            }
+          ]
+        },
+        {
+          "type": "subhead",
+          "text": "On stage"
+        },
+        {
+          "type": "media",
+          "layout": "gallery",
+          "items": [
+            {
+              "src": "media/helsinki-global-growth-circular-futures.webp",
+              "alt": "Collage of Anuj presenting greenpeople.earth in a lecture hall at the University of Helsinki, with the audience and panel",
+              "caption": "Presenting on inclusive trade at the Global Growth & Circular Futures evening, University of Helsinki, Finland"
+            },
+            {
+              "src": "media/verbier-summit.webp",
+              "alt": "Anuj presenting in front of event banners, with snowy mountains through the windows behind",
+              "caption": "Presenting at the Global Sustainability and Finance Summit, Verbier, Switzerland"
+            },
+            {
+              "src": "media/afrp9-namibia-speaker.webp",
+              "alt": "Speaker card for Anuj Kapoor, Founding Director, greenpeople.earth, AfRP-9 Namibia",
+              "caption": "Speaker, 'Is Nature Africa's Secret Weapon in the Fight Against Climate Change?', AfRP-9, Windhoek, Namibia, 24 October 2024"
+            },
+            {
+              "src": "media/afrp9-namibia-session.webp",
+              "alt": "Collage of speakers at the Africa Regional Platform for Disaster Risk Reduction session",
+              "caption": "Presenting on technology for creating natural assets in Africa at AfRP-9, organised by the UN Office for Disaster Risk Reduction and the African Union Commission"
+            },
+            {
+              "src": "media/impact-week-singapore-2025.webp",
+              "alt": "Anuj speaking on a five-person panel at Impact Week 2025",
+              "caption": "Panel on impact measurement, Impact Week 2025, Singapore"
+            }
+          ]
+        },
+        {
+          "type": "subhead",
+          "text": "In between"
+        },
+        {
+          "type": "media",
+          "layout": "gallery",
+          "items": [
+            {
+              "src": "media/shimla-garden.webp",
+              "alt": "Anuj in a Himachali cap holding a cup of tea in a garden with flowering creepers",
+              "caption": "Tea in the garden, in a Himachali cap"
+            },
+            {
+              "src": "media/march-for-men-london.webp",
+              "alt": "Selfie on the Thames embankment during the Prostate Cancer UK March for Men",
+              "caption": "Prostate Cancer UK's March for Men, along the Thames in London"
+            },
+            {
+              "src": "media/cambridge.webp",
+              "alt": "Anuj in a three-piece suit on a gravel path beside a classical stone building and a large tree",
+              "caption": "Suited up between sessions"
+            }
+          ]
         }
       ]
     },
