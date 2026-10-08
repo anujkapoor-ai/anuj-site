@@ -596,13 +596,42 @@
       ]
     },
     {
+      "id": "media",
+      "group": "life",
+      "draft": "Draft · photos and video to come",
+      "tile": {
+        "title": "Media",
+        "meta": "Photos & video",
+        "teaser": "Pictures and films from the hills, the markets and the work.",
+        "w": 6,
+        "h": 2,
+        "motif": "frames",
+        "tone": "light"
+      },
+      "panel": {
+        "kicker": "Media",
+        "title": "Pictures and moving pictures"
+      },
+      "blocks": [
+        {
+          "type": "lede",
+          "text": "Photos and video from Shimla, the markets, the ventures and the talks."
+        },
+        {
+          "type": "p",
+          "muted": true,
+          "text": "Coming soon."
+        }
+      ]
+    },
+    {
       "id": "next",
       "group": "next",
       "draft": "Draft · check the wording",
       "tile": {
         "title": "What's next, and how I like to work",
         "teaser": "What I'm building, who I'd like to meet, and why I prefer shared value to a day rate.",
-        "w": 12,
+        "w": 6,
         "h": 2,
         "motif": "horizon",
         "tone": "gold"
