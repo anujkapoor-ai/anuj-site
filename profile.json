@@ -176,8 +176,7 @@
         "w": 4,
         "h": 2,
         "motif": "columns",
-        "tone": "dark",
-        "cover": "media/verbier-summit.webp"
+        "tone": "dark"
       },
       "panel": {
         "kicker": "Policy & leadership · 2023 → now",
@@ -524,8 +523,7 @@
         "w": 3,
         "h": 3,
         "motif": "mountains",
-        "tone": "light",
-        "cover": "media/shimla-garden.webp"
+        "tone": "light"
       },
       "panel": {
         "kicker": "Home & family",
@@ -540,9 +538,9 @@
           "type": "media",
           "items": [
             {
-              "src": "media/shimla-garden.webp",
-              "alt": "Anuj in a Himachali cap holding a cup of tea in a garden",
-              "caption": "Tea in the garden, in a Himachali cap"
+              "src": "shimla-garden.webp",
+              "alt": "In Himachal",
+              "caption": "In Himachal"
             }
           ]
         },
@@ -662,8 +660,7 @@
         "w": 6,
         "h": 2,
         "motif": "frames",
-        "tone": "light",
-        "cover": "media/helsinki-global-growth-circular-futures.webp"
+        "tone": "light"
       },
       "panel": {
         "kicker": "Media",
@@ -682,14 +679,14 @@
               "linkText": "YouTube"
             },
             {
-              "src": "media/helsinki-global-growth-circular-futures.webp",
-              "alt": "Collage of Anuj presenting greenpeople.earth in a lecture hall at the University of Helsinki, with the audience and panel",
-              "caption": "Presenting on inclusive trade at the Global Growth & Circular Futures evening, University of Helsinki, Finland"
+              "src": "helsinki-global-growth-circular-futures.webp",
+              "alt": "At the University of Helsinki",
+              "caption": "University of Helsinki, Global Growth & Circular Futures: on inclusive trade"
             },
             {
-              "src": "media/verbier-summit.webp",
-              "alt": "Anuj presenting in front of event banners, with snowy mountains through the windows behind",
-              "caption": "Presenting at the Global Sustainability and Finance Summit, Verbier, Switzerland"
+              "src": "verbier-summit.webp",
+              "alt": "At the Verbier Summit",
+              "caption": "Global Sustainability and Finance Summit, Verbier, Switzerland"
             },
             {
               "type": "podcast",
@@ -699,34 +696,34 @@
               "linkText": "Apple Podcasts"
             },
             {
-              "src": "media/afrp9-namibia-speaker.webp",
-              "alt": "Speaker card for Anuj Kapoor, Founding Director, greenpeople.earth, AfRP-9 Namibia",
-              "caption": "Speaker, 'Is Nature Africa's Secret Weapon in the Fight Against Climate Change?', AfRP-9, Windhoek, Namibia, 24 October 2024"
+              "src": "afrp9-namibia-speaker.webp",
+              "alt": "AfRP-9 speaker card",
+              "caption": "AfRP-9, Windhoek, Namibia: 'Is Nature Africa's Secret Weapon in the Fight Against Climate Change?', 24 October 2024"
             },
             {
-              "src": "media/afrp9-namibia-session.webp",
-              "alt": "Collage of speakers at the Africa Regional Platform for Disaster Risk Reduction session",
-              "caption": "Presenting on technology for creating natural assets in Africa at AfRP-9, organised by the UN Office for Disaster Risk Reduction and the African Union Commission"
+              "src": "afrp9-namibia-session.webp",
+              "alt": "At AfRP-9 in Windhoek",
+              "caption": "AfRP-9, Windhoek: technology for creating natural assets in Africa. UN Office for Disaster Risk Reduction and the African Union Commission"
             },
             {
-              "src": "media/impact-week-singapore-2025.webp",
-              "alt": "Anuj speaking on a five-person panel at Impact Week 2025",
-              "caption": "Panel on impact measurement, Impact Week 2025, Singapore"
+              "src": "impact-week-singapore-2025.webp",
+              "alt": "At Impact Week, Singapore",
+              "caption": "Impact Week 2025, Singapore: panel on impact measurement"
             },
             {
-              "src": "media/shimla-garden.webp",
-              "alt": "Anuj in a Himachali cap holding a cup of tea in a garden with flowering creepers",
-              "caption": "Tea in the garden, in a Himachali cap"
+              "src": "shimla-garden.webp",
+              "alt": "In Himachal",
+              "caption": "In Himachal"
             },
             {
-              "src": "media/march-for-men-london.webp",
-              "alt": "Selfie on the Thames embankment during the Prostate Cancer UK March for Men",
-              "caption": "Prostate Cancer UK's March for Men, along the Thames in London"
+              "src": "march-for-men-london.webp",
+              "alt": "On the Prostate Cancer UK 20 km walk",
+              "caption": "On the Prostate Cancer UK 20 km walk, London"
             },
             {
-              "src": "media/cambridge.webp",
-              "alt": "Anuj in a three-piece suit on a gravel path beside a classical stone building and a large tree",
-              "caption": "Suited up between sessions"
+              "src": "cambridge.webp",
+              "alt": "In Cambridge",
+              "caption": "In Cambridge, between sessions"
             }
           ]
         }
