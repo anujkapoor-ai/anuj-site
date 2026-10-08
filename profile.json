@@ -144,13 +144,13 @@
             },
             {
               "when": "Side project",
-              "title": "Festival People · Founder",
+              "title": "Festival People · Designer and Builder",
               "text": "A game I designed so my family could celebrate Holi and other festivals together from wherever we were. It became a small gaming app, made for the fun of it."
             },
             {
               "when": "2012 – 2013",
-              "title": "Distributed systems research",
-              "text": "White papers on data harvesting, intelligence and consensus for proof-of-truth systems; DLT use cases in finance, supply chains and data validation."
+              "title": "Trading digital assets and working on distributed systems",
+              "text": "Trading and experimenting with Bitcoin and other digital assets while researching distributed systems: white papers on data harvesting, intelligence and consensus for proof-of-truth systems, and DLT use cases in finance, supply chains and data validation."
             },
             {
               "when": "2008 – 2012",
@@ -216,7 +216,7 @@
           "kind": "talks",
           "items": [
             {
-              "when": "Roundtable",
+              "when": "2026",
               "title": "World Economic Forum",
               "text": "Roundtable on sustainable jobs in the AI economy."
             },
@@ -227,8 +227,13 @@
             },
             {
               "when": "Talk · Oct 2024",
-              "title": "AfRP-9, Windhoek, Namibia",
+              "title": "UNDRR AfRP-9, Windhoek, Namibia",
               "text": "Presentation on using technology to create natural assets in Africa, at the Africa Regional Platform for Disaster Risk Reduction, organised by the UN Office for Disaster Risk Reduction and the African Union Commission."
+            },
+            {
+              "when": "Lecture · 2024",
+              "title": "ESCP Business School, London",
+              "text": "Lecture on sustainability and the circular economy."
             },
             {
               "when": "Summit",
