@@ -1,21 +1,12 @@
 {
   "name": "Anuj Kapoor",
-  "places": [
-    {
-      "coord": "51.5°N",
-      "name": "London"
-    },
-    {
-      "coord": "31.1°N",
-      "name": "Shimla"
-    }
-  ],
+  "places": [],
   "roleLine": "Venture & Product Builder",
   "thesis": {
     "text": "I go where technology is rewriting economics and markets,",
     "emphasis": "and build there."
   },
-  "strap": "Right now that means making a forest as legible to markets as a bond, putting Himalayan supply chains on digital rails from loom to London, threading solar energy systems with a distributed platform, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a banker and technology strategist, wired as a founder, and drawn into policy and advisory because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
+  "strap": "Right now that means making a forest as legible to markets as a bond, threading solar energy systems with a distributed platform, putting Himalayan supply chains on digital rails from loom to London, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a banker and technology strategist, wired as a founder, and drawn into policy and advisory because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
   "email": "anuj.kapoor@gmail.com",
   "links": [
     {
@@ -135,7 +126,7 @@
             {
               "when": "2013 – now",
               "title": "Five Benches · Founder Director",
-              "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe.",
+              "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe. Through Himalayan People I gave Chamba Chukh, a chilli preserve made by a remote community of chilli growers and women's self-help groups, its digital identity and built its supply chain from the villages to export and e-commerce markets.",
               "tags": [
                 "Himalayan People · textiles",
                 "Palampore Tea",
@@ -269,7 +260,7 @@
       "group": "work",
       "tile": {
         "title": "Technical proficiency",
-        "teaser": "Venture building, AI and data systems, finance and structuring, policy and strategy.",
+        "teaser": "Venture building, AI and data systems, finance and structuring, carbon and energy markets, policy and strategy.",
         "w": 3,
         "h": 2,
         "motif": "network",
@@ -313,7 +304,11 @@
                 "Multi-asset structuring",
                 "Derivatives",
                 "Capital raising",
-                "Impact investment"
+                "Impact investment",
+                "Project finance & structuring",
+                "Carbon markets strategy",
+                "Energy markets",
+                "I-RECs & renewable certificates"
               ]
             },
             {
@@ -348,7 +343,7 @@
       "blocks": [
         {
           "type": "p",
-          "text": "My MBA gave me the classical core: economics, finance and business. I went to the LSE deliberately to add a second layer, new technology and how economics itself changes with it. In 2024–25 I added a third at Cambridge: sustainability leadership."
+          "text": "My MBA gave me the classical core: economics, finance and business. I went to the LSE to add a second layer, new technology and how economics itself changes with it. In 2024–25 I added a third at Cambridge: sustainability leadership."
         },
         {
           "type": "cards",
@@ -382,7 +377,7 @@
       "group": "work",
       "tile": {
         "title": "Publications",
-        "teaser": "Ten pieces, 2012–2020: Bitcoin, smart money, tea, provenance and entrepreneurship.",
+        "teaser": "2012–2020: Bitcoin, smart money, tea, provenance and entrepreneurship.",
         "meta": "2012 → 2020",
         "w": 5,
         "h": 3,
@@ -397,7 +392,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Ten pieces from 2012 to 2020, on Bitcoin, smart money, entrepreneurship and a good deal of tea."
+          "text": "From 2012 to 2020, on Bitcoin, smart money, entrepreneurship and a good deal of tea."
         },
         {
           "type": "list",
@@ -479,7 +474,7 @@
       "draft": "Draft · add your own stories",
       "tile": {
         "title": "Experiences & stories",
-        "teaser": "Laptop thieves, a Mayfair exit, a village loom and a London stall.",
+        "teaser": "Laptop thieves, a Himalayan chilli on the world map, a Mayfair exit and a London stall.",
         "w": 4,
         "h": 2,
         "motif": "holi",
@@ -498,6 +493,10 @@
               "text": "A personal story of chasing a gang of laptop thieves around London.",
               "url": "https://medium.com/@anuj.kapoor/saucepan-and-three-bananas-a-personal-story-of-chasing-a-gang-of-laptop-theives-around-london-c50c89ae7735",
               "label": "Medium"
+            },
+            {
+              "title": "Chamba Chukh, from a remote valley to the world map",
+              "text": "Working with chilli growers and women's self-help groups in a remote Himalayan community, I created the digital identity for their community product, Chamba Chukh, and launched it on the web. I built the whole supply chain from the villages to export and e-commerce markets, putting it on the global map of provenance-rich chilli products. It drew attention from national news channels and media, and the state government later put it forward for Geographical Indication (GI) certification."
             },
             {
               "title": "Holi from anywhere",
@@ -662,7 +661,7 @@
         "title": "Media",
         "meta": "Photos & video",
         "teaser": "Talks, panels, podcast and a few moments in between.",
-        "w": 6,
+        "w": 4,
         "h": 2,
         "motif": "frames",
         "tone": "light"
@@ -735,20 +734,68 @@
       ]
     },
     {
+      "id": "lab",
+      "group": "next",
+      "tile": {
+        "title": "Ideas & innovations lab",
+        "meta": "By invitation",
+        "teaser": "Private ideas, prototypes and projects in progress.",
+        "w": 4,
+        "h": 2,
+        "motif": "network",
+        "tone": "dark",
+        "tags": [
+          "AI & digital intelligence",
+          "Natural capital",
+          "Tokenised assets",
+          "Energy markets",
+          "Gamification",
+          "New mobility"
+        ]
+      },
+      "panel": {
+        "kicker": "Ideas & innovations lab",
+        "title": "A private lab, open by invitation"
+      },
+      "blocks": [
+        {
+          "type": "lede",
+          "text": "This is where I keep ideas, prototypes and projects that aren't public yet."
+        },
+        {
+          "type": "tags",
+          "items": [
+            "AI & digital intelligence",
+            "Natural capital",
+            "Tokenised assets",
+            "Energy markets",
+            "Gamification",
+            "New mobility"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "To access my innovations, ideas and projects, reach out to me for access."
+        },
+        {
+          "type": "email"
+        }
+      ]
+    },
+    {
       "id": "next",
       "group": "next",
-      "draft": "Draft · check the wording",
       "tile": {
-        "title": "What's next, and how I like to work",
-        "teaser": "What I'm building, who I'd like to meet, and why I prefer shared value to a day rate.",
-        "w": 6,
+        "title": "Current projects and how I like to work",
+        "teaser": "What I'm building, how I advise, and why I prefer shared value to a day rate.",
+        "w": 4,
         "h": 2,
         "motif": "horizon",
         "tone": "gold"
       },
       "panel": {
-        "kicker": "What's next?",
-        "title": "What I'm working towards"
+        "kicker": "Current projects",
+        "title": "What I'm building now, and how I like to work"
       },
       "blocks": [
         {
@@ -757,6 +804,10 @@
             {
               "title": "Building",
               "text": "Taking Green Intelligence from framework to the default data layer for environmental projects, registries and funders."
+            },
+            {
+              "title": "Advising",
+              "text": "Short, focused engagements with C-suite teams adopting new technology, such as digital intelligence, to move faster, pivot with confidence and create impact early."
             },
             {
               "title": "Looking for",

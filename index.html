@@ -156,6 +156,9 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tile.has-cover::before { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(14, 18, 22, .62) 0%, rgba(14, 18, 22, .38) 45%, rgba(14, 18, 22, .84) 100%); }
 .tile.has-cover .kick, .tile.has-cover p, .tile.has-cover .meta { color: rgba(244, 246, 248, .86); }
 .tile.has-cover .motif { display: none; }
+.tile-tags { display: flex; flex-wrap: wrap; gap: 5px; padding-right: 40px; }
+.tile-tags span { font: 12px var(--body); padding: 2px 8px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent); }
+.tile.t-dark .tile-tags span { color: var(--charcoal-ink); }
 .hint { font: 12px var(--mono); color: var(--muted); text-align: right; margin: 0 0 10px; }
 @media (max-width: 600px) { .hint { text-align: left; } }
 
@@ -494,6 +497,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     if (d.welcome) { $('welcome').textContent = d.welcome; $('welcome').hidden = false; }
     $('hint').textContent = d.hint || '';
     var coords = $('coords');
+    if (!(d.places && d.places.length)) coords.hidden = true;
     (d.places || []).forEach(function (p, i) { if (i) coords.appendChild(h('span', { text: '⇄' })); coords.appendChild(h('span', null, [h('b', { text: p.coord }), ' ' + p.name])); });
     $('thesis').append(d.thesis.text + ' ', h('em', { text: d.thesis.emphasis }));
     $('strap').textContent = d.strap;
@@ -522,6 +526,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
           h('h3', { text: t.title })
         ]),
         t.teaser ? h('p', { text: t.teaser }) : null,
+        t.tags ? h('div', { class: 'tile-tags' }, t.tags.map(function (x) { return h('span', { text: x }); })) : null,
         h('span', { class: 'go', 'aria-hidden': 'true', text: '→' })
       ]);
       if (t.cover) tile.style.backgroundImage = 'url("' + String(t.cover).replace(/"/g, '') + '")';
