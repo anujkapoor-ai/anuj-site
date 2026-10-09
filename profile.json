@@ -119,6 +119,11 @@
           "type": "rows",
           "items": [
             {
+              "when": "2025 – now",
+              "title": "Catalyst Now · Co-Chair",
+              "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals."
+            },
+            {
               "when": "2022 – now",
               "title": "GreenPeople.earth · Founder Director",
               "text": "Data, data intelligence and fintech for environmental markets. Built Green Intelligence, an AI project-data environment that maps renewable, nature-based carbon and environmental projects against markets, regulations and registries."
@@ -179,22 +184,21 @@
           "text": "Bringing a builder's view into policy and leadership."
         },
         {
-          "type": "cards",
+          "type": "lede",
+          "text": "Advisory"
+        },
+        {
+          "type": "rows",
           "items": [
             {
-              "label": "Advisor · 2023–2024",
-              "title": "All-Party Parliamentary Group on ESG",
-              "text": "Advisor to the APPG on Environment, Social and Governance at Westminster. Co-hosted its round table on voluntary carbon markets."
+              "when": "Advisor · 2023 – 2024",
+              "title": "All-Party Parliamentary Group on ESG, Westminster",
+              "text": "Advisor to the APPG on Environment, Social and Governance. Co-hosted its round table on voluntary carbon markets."
             },
             {
-              "label": "Canopy Programme · 2024–2025",
-              "title": "University of Cambridge",
-              "text": "Institute for Sustainability Leadership (CISL)."
-            },
-            {
-              "label": "Speaker · 2024",
-              "title": "United Nations Office for Disaster Risk Reduction",
-              "text": "Presented on technology for creating natural assets in Africa at AfRP-9 in Windhoek, Namibia."
+              "when": "Programme · 2024 – 2025",
+              "title": "University of Cambridge Institute for Sustainability Leadership (CISL)",
+              "text": "Canopy Programme."
             }
           ]
         },
@@ -257,20 +261,6 @@
           "type": "p",
           "muted": true,
           "text": "When you build at the leading edge of innovation, it matters to share what you learn with the people setting the rules and policies for a new paradigm. I have been fortunate to be in the rooms where those discussions happen, helping make sure the new road is built for both speed and safety."
-        },
-        {
-          "type": "lede",
-          "text": "Community leadership"
-        },
-        {
-          "type": "cards",
-          "items": [
-            {
-              "label": "Co-Chair · 2025–now",
-              "title": "Catalyst Now",
-              "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals."
-            }
-          ]
         }
       ]
     },
