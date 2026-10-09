@@ -192,15 +192,15 @@
               "text": "Institute for Sustainability Leadership (CISL)."
             },
             {
-              "label": "Co-Chair · 2025–now",
-              "title": "Catalyst Now",
-              "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals."
+              "label": "Speaker · 2024",
+              "title": "United Nations Office for Disaster Risk Reduction",
+              "text": "Presented on technology for creating natural assets in Africa at AfRP-9 in Windhoek, Namibia."
             }
           ]
         },
         {
           "type": "lede",
-          "text": "Bringing a builder's view into policy and leadership."
+          "text": "Speaking and convenings"
         },
         {
           "type": "rows",
@@ -257,6 +257,20 @@
           "type": "p",
           "muted": true,
           "text": "When you build at the leading edge of innovation, it matters to share what you learn with the people setting the rules and policies for a new paradigm. I have been fortunate to be in the rooms where those discussions happen, helping make sure the new road is built for both speed and safety."
+        },
+        {
+          "type": "lede",
+          "text": "Community leadership"
+        },
+        {
+          "type": "cards",
+          "items": [
+            {
+              "label": "Co-Chair · 2025–now",
+              "title": "Catalyst Now",
+              "text": "Digital Collaborative of a global movement of social innovators working towards the 2030 Sustainable Development Goals."
+            }
+          ]
         }
       ]
     },
