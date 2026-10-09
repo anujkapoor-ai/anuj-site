@@ -44,7 +44,7 @@
         },
         {
           "type": "p",
-          "text": "I trained in classical economics and business, then went to the LSE for further studies, specialising in the future of technology at the dawn of social media, and what it would mean for social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
+          "text": "I trained in classical economics and business, then went on to the London School of Economics for an MSc, studying how new media and information systems, at the dawn of social media, would shape the evolution of social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
         },
         {
           "type": "p",
@@ -176,7 +176,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Bringing a builder's view of ESG into policy and leadership."
+          "text": "Bringing a builder's view into policy and leadership."
         },
         {
           "type": "cards",
@@ -200,7 +200,7 @@
         },
         {
           "type": "lede",
-          "text": "Speaking and convenings"
+          "text": "Bringing a builder's view into policy and leadership."
         },
         {
           "type": "rows",
@@ -541,7 +541,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Born in Shimla, Himachal Pradesh, into a family of professionals, and raised in the mountains and valleys around it."
+          "text": "Born in Shimla, in the Himalayan hills, into a family of professionals, and educated in cities across the world."
         },
         {
           "type": "cards",
@@ -549,17 +549,17 @@
             {
               "label": "Father",
               "title": "Medicine",
-              "text": "An oncologist and professor at the medical college in Shimla."
+              "text": "Oncologist and retired Principal of the Medical College in Shimla. Founder Head of the Regional Cancer Centre, and now a campaigner for awareness of lifestyle diseases."
             },
             {
               "label": "Mother",
               "title": "Law",
-              "text": "A career in the judicial services."
+              "text": "Educated in law, a retired judge and former Secretary of the Himachal Pradesh Legal Aid Board. She now serves on ethics boards and committees at academic institutions in the state."
             },
             {
-              "label": "Older brother",
-              "title": "Writing & research",
-              "text": "A writer and market researcher."
+              "label": "Brother",
+              "title": "Writing & enterprise",
+              "text": "Published writer and poet, former market researcher and creative director. Co-founder of Five Benches, the enterprise helping Himalayan makers create market-ready products."
             }
           ]
         },
