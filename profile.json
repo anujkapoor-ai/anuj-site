@@ -44,7 +44,7 @@
         },
         {
           "type": "p",
-          "text": "I trained in classical economics and business, then went to the LSE to study the future of technology at the dawn of social media, and what it would mean for social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
+          "text": "I trained in classical economics and business, then went to the LSE for further studies, specialising in the future of technology at the dawn of social media, and what it would mean for social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
         },
         {
           "type": "p",
@@ -207,22 +207,22 @@
           "kind": "talks",
           "items": [
             {
-              "when": "2026",
+              "when": "Roundtable",
               "title": "World Economic Forum",
               "text": "Roundtable on sustainable jobs in the AI economy."
             },
             {
-              "when": "Panel · 2025",
+              "when": "Panel",
               "title": "Impact Week, Singapore",
               "text": "Panel on impact measurement."
             },
             {
-              "when": "Talk · Oct 2024",
-              "title": "UNDRR AfRP-9, Windhoek, Namibia",
-              "text": "Presentation on using technology to create natural assets in Africa, at the Africa Regional Platform for Disaster Risk Reduction, organised by the UN Office for Disaster Risk Reduction and the African Union Commission."
+              "when": "Talk",
+              "title": "United Nations Office for Disaster Risk Reduction (UNDRR)",
+              "text": "Presentation on using technology to create natural assets in Africa, at the Africa Regional Platform for Disaster Risk Reduction (AfRP-9) in Windhoek, Namibia, organised with the African Union Commission."
             },
             {
-              "when": "Lecture · 2024",
+              "when": "Lecture",
               "title": "ESCP Business School, London",
               "text": "Lecture to undergraduate students on the future of sustainability and the circular economy."
             },
@@ -539,16 +539,6 @@
           "text": "Born in Shimla, Himachal Pradesh, into a family of professionals, and raised in the mountains and valleys around it."
         },
         {
-          "type": "media",
-          "items": [
-            {
-              "src": "shimla-garden.webp",
-              "alt": "In Himachal",
-              "caption": "In Himachal"
-            }
-          ]
-        },
-        {
           "type": "cards",
           "items": [
             {
@@ -576,6 +566,17 @@
           "type": "p",
           "muted": true,
           "text": "Many of my creative ventures began by connecting back to home and family. Himalayan People started as a way to work with and support communities close to where I was born, and Festival People is a game I designed so we could celebrate festivals together from wherever we were."
+        },
+        {
+          "type": "media",
+          "items": [
+            {
+              "src": "shimla-garden.webp",
+              "alt": "In Himachal",
+              "caption": "In Himachal"
+            }
+          ],
+          "size": "small"
         }
       ]
     },
@@ -693,11 +694,6 @@
               "caption": "At the GreenPeople.earth stand"
             },
             {
-              "src": "verbier-talk.webp",
-              "alt": "Speaking to an audience in front of large windows with Alpine chalets and mountains",
-              "caption": "Speaking at the Verbier Summit"
-            },
-            {
               "src": "helsinki-global-growth-circular-futures.webp",
               "alt": "At the University of Helsinki",
               "caption": "University of Helsinki, Global Growth & Circular Futures: on inclusive trade"
@@ -726,13 +722,13 @@
             },
             {
               "src": "field-visit.webp",
-              "alt": "A group of partners standing outside a green building",
-              "caption": "On a field visit with partners"
+              "alt": "Group photo with the Red Cross team outside the Forestry Department in Ghana",
+              "caption": "With the Red Cross team in Ghana, after a meeting with the Forestry Department"
             },
             {
               "src": "tree-planting.webp",
-              "alt": "Kneeling beside a planted tree marked E6 with a UK flag",
-              "caption": "At a tree-planting site"
+              "alt": "Kneeling beside a planted tree marked E6 at a tree-planting site near Accra, Ghana",
+              "caption": "Field visit to a tree-planting site near Accra"
             },
             {
               "src": "afrp9-namibia-speaker.webp",
@@ -771,8 +767,8 @@
             },
             {
               "src": "kite.webp",
-              "alt": "Flying a kite on a grassy hilltop under a blue sky",
-              "caption": "Flying a kite"
+              "alt": "Flying a kite on a grassy clifftop while hiking along the English coast",
+              "caption": "Hiking along the English coast"
             }
           ]
         }
@@ -852,15 +848,15 @@
             },
             {
               "title": "Advising",
-              "text": "Short, focused engagements with C-suite teams adopting new technology, such as digital intelligence, to move faster, pivot with confidence and create impact early."
+              "text": "Helping C-suite teams pivot their organisations quickly to new technologies such as digital intelligence, through short, high-impact engagements that set the course for rapid change."
             },
             {
               "title": "Looking for",
-              "text": "Collaborators, investors and boards working where finance, technology and climate meet."
+              "text": "Collaborators, partners, investors and boards building solutions in finance, technology and impact."
             },
             {
               "title": "Open to",
-              "text": "Advisory, board and strategy roles where something new needs to be understood, then built."
+              "text": "Advisory, board, strategy and technology consulting roles where something new needs to be understood, then built."
             }
           ]
         },
