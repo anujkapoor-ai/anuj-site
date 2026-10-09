@@ -683,6 +683,21 @@
               "linkText": "YouTube"
             },
             {
+              "src": "himachilli-team.webp",
+              "alt": "Four people in blue aprons holding Himachilli sauces and preserves, with forested hills behind",
+              "caption": "With the Himachilli team in Himachal"
+            },
+            {
+              "src": "greenpeople-stand.webp",
+              "alt": "The GreenPeople.earth team at an exhibition stand",
+              "caption": "At the GreenPeople.earth stand"
+            },
+            {
+              "src": "verbier-talk.webp",
+              "alt": "Speaking to an audience in front of large windows with Alpine chalets and mountains",
+              "caption": "Speaking at the Verbier Summit"
+            },
+            {
               "src": "helsinki-global-growth-circular-futures.webp",
               "alt": "At the University of Helsinki",
               "caption": "University of Helsinki, Global Growth & Circular Futures: on inclusive trade"
@@ -698,6 +713,26 @@
               "caption": "Deanna's Dialogues, Faegre Drinker (California): navigating carbon sustainability, compliance and voluntary carbon markets",
               "url": "https://podcasts.apple.com/us/podcast/intersection-of-compliance-carbon-voluntary-carbon/id1759561324?i=1000677659416",
               "linkText": "Apple Podcasts"
+            },
+            {
+              "src": "afrp9-podium.webp",
+              "alt": "Speaking at a podium at the Africa Regional Platform for Disaster Risk Reduction",
+              "caption": "UNDRR AfRP-9, Windhoek"
+            },
+            {
+              "src": "afrp9-roundtable.webp",
+              "alt": "Listening during a roundtable discussion",
+              "caption": "Roundtable at AfRP-9, Windhoek"
+            },
+            {
+              "src": "field-visit.webp",
+              "alt": "A group of partners standing outside a green building",
+              "caption": "On a field visit with partners"
+            },
+            {
+              "src": "tree-planting.webp",
+              "alt": "Kneeling beside a planted tree marked E6 with a UK flag",
+              "caption": "At a tree-planting site"
             },
             {
               "src": "afrp9-namibia-speaker.webp",
@@ -728,6 +763,16 @@
               "src": "cambridge.webp",
               "alt": "In Cambridge",
               "caption": "In Cambridge, between sessions"
+            },
+            {
+              "src": "kayak-london.webp",
+              "alt": "Paddling an orange kayak past a narrowboat",
+              "caption": "Kayaking on a London canal"
+            },
+            {
+              "src": "kite.webp",
+              "alt": "Flying a kite on a grassy hilltop under a blue sky",
+              "caption": "Flying a kite"
             }
           ]
         }
