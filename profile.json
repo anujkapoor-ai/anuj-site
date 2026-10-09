@@ -564,7 +564,7 @@
         {
           "type": "p",
           "muted": true,
-          "text": "Many of my creative ventures began by connecting back to home and family. Himalayan People started as a way to work with and support communities close to where I was born, and Festival People is a game I designed so we could celebrate festivals together from wherever we were."
+          "text": "Several of my creative ventures began by solving small problems for the people around me. Himalayan People started as a way to connect communities near where I was born to digital markets. Festival People is a game I designed so my family could celebrate festivals together from wherever we were. Green Intelligence came from noticing that capable, hardworking project developers in rural communities struggled to pitch their work to funders and grant makers. It now does that for them, leaving them free to get on with their real work, which is in atoms, not digits."
         },
         {
           "type": "media",
@@ -668,7 +668,7 @@
       },
       "panel": {
         "kicker": "Media",
-        "title": "Talks, panels and moments in between"
+        "title": "Talks, panels and life moments in between"
       },
       "blocks": [
         {
@@ -698,16 +698,16 @@
               "caption": "University of Helsinki, Global Growth & Circular Futures: on inclusive trade"
             },
             {
-              "src": "verbier-summit.webp",
-              "alt": "At the Verbier Summit",
-              "caption": "Global Sustainability and Finance Summit, Verbier, Switzerland"
-            },
-            {
               "type": "podcast",
               "embed": "https://embed.podcasts.apple.com/us/podcast/intersection-of-compliance-carbon-voluntary-carbon/id1759561324?i=1000677659416",
               "caption": "Deanna's Dialogues, Faegre Drinker (California): navigating carbon sustainability, compliance and voluntary carbon markets",
               "url": "https://podcasts.apple.com/us/podcast/intersection-of-compliance-carbon-voluntary-carbon/id1759561324?i=1000677659416",
               "linkText": "Apple Podcasts"
+            },
+            {
+              "src": "verbier-summit.webp",
+              "alt": "At the Verbier Summit",
+              "caption": "Global Sustainability and Finance Summit, Verbier, Switzerland"
             },
             {
               "src": "afrp9-podium.webp",
@@ -745,11 +745,6 @@
               "caption": "Impact Week 2025, Singapore: panel on impact measurement"
             },
             {
-              "src": "shimla-garden.webp",
-              "alt": "In Himachal",
-              "caption": "In Himachal"
-            },
-            {
               "src": "march-for-men-london.webp",
               "alt": "On the Prostate Cancer UK 20 km walk",
               "caption": "On the Prostate Cancer UK 20 km walk, London"
@@ -768,6 +763,11 @@
               "src": "kite.webp",
               "alt": "Flying a kite on a grassy clifftop while hiking along the English coast",
               "caption": "Hiking along the English coast"
+            },
+            {
+              "src": "shimla-garden.webp",
+              "alt": "In Himachal",
+              "caption": "In Himachal"
             }
           ]
         }

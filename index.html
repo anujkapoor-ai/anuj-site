@@ -236,6 +236,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .media iframe { aspect-ratio: 16 / 9; height: auto; }
 .media figcaption { font: 14px/1.45 var(--body); color: var(--muted); }
 .media.single { grid-template-columns: 1fr; }
+.media.small { max-width: 260px; }
 .media.gallery { display: block; columns: 2 240px; column-gap: 14px; }
 .media.gallery figure { break-inside: avoid; margin: 0 0 14px; }
 .media .shot { display: block; }
@@ -245,6 +246,8 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .media figcaption a { color: var(--accent-ink); text-underline-offset: 3px; }
 .media figure.is-youtube, .media figure.is-podcast { grid-column: 1 / -1; }
 .media.collage { display: block; columns: 3 210px; column-gap: 12px; }
+.media.collage.cols { display: flex; gap: 12px; align-items: flex-start; columns: auto; }
+.media.collage.cols .col { flex: 1; min-width: 0; }
 .media.collage figure { break-inside: avoid; margin: 0 0 12px; padding: 8px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); }
 .media.collage figure img, .media.collage figure iframe { border: 0; border-radius: 8px; }
 .media.collage iframe.podcast { height: 175px; }
@@ -473,8 +476,8 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
       }));
     },
     media: function (b) {
-      var cls = 'media' + (b.layout === 'gallery' ? ' gallery' : '') + (b.layout === 'collage' ? ' collage' : '') + (b.items.length === 1 ? ' single' : '');
-      return h('div', { class: cls }, b.items.map(function (m) {
+      var cls = 'media' + (b.size === 'small' ? ' small' : '') + (b.layout === 'gallery' ? ' gallery' : '') + (b.layout === 'collage' ? ' collage' : '') + (b.items.length === 1 ? ' single' : '');
+      var figs = b.items.map(function (m) {
         var el;
         if (m.type === 'video') el = h('video', { src: m.src, controls: '', preload: 'metadata', playsinline: '', poster: m.poster });
         else if (m.type === 'youtube') el = h('iframe', { src: 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(m.id), title: m.caption || 'Video', allow: 'encrypted-media; picture-in-picture', allowfullscreen: '', loading: 'lazy' });
@@ -482,7 +485,14 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
         else el = h('a', { href: m.src, target: '_blank', rel: 'noopener', class: 'shot' }, [h('img', { src: m.src, alt: m.alt || '', loading: 'lazy' })]);
         var cap = m.caption ? h('figcaption', null, [m.caption, m.url ? ' · ' : null, m.url ? h('a', { href: m.url, target: '_blank', rel: 'noopener', text: (m.linkText || 'Open') + ' ↗' }) : null]) : null;
         return h('figure', { class: m.type ? 'is-' + m.type : null }, [el, cap]);
-      }));
+      });
+      if (b.layout === 'collage') {
+        // Fill columns left to right, row by row, so the order in profile.json reads across the page.
+        var w = window.innerWidth, n = w < 600 ? 1 : (w < 900 ? 2 : 3), cols = [];
+        for (var c = 0; c < n; c++) cols.push(h('div', { class: 'col' }, figs.filter(function (_, i) { return i % n === c; })));
+        return h('div', { class: cls + ' cols' }, cols);
+      }
+      return h('div', { class: cls }, figs);
     }
   };
 
