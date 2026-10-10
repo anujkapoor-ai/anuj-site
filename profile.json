@@ -779,12 +779,13 @@
       "tile": {
         "title": "Ideas & innovations lab",
         "meta": "By invitation",
-        "teaser": "Private ideas, prototypes and projects in progress.",
+        "teaser": "Private white papers, ideas, prototypes and projects in progress.",
         "w": 4,
         "h": 2,
         "motif": "network",
         "tone": "dark",
         "tags": [
+          "White papers",
           "AI & digital intelligence",
           "Natural capital",
           "Tokenised assets",
@@ -800,11 +801,12 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "This is where I keep ideas, prototypes and projects that aren't public yet."
+          "text": "This is where I keep white papers, ideas, prototypes and projects that aren't public yet."
         },
         {
           "type": "tags",
           "items": [
+            "White papers",
             "AI & digital intelligence",
             "Natural capital",
             "Tokenised assets",
@@ -826,16 +828,16 @@
       "id": "next",
       "group": "next",
       "tile": {
-        "title": "Current projects and how I like to work",
-        "teaser": "What I'm building, how I advise, and why I prefer shared value to a day rate.",
+        "title": "Current work, collaboration and how I engage",
+        "teaser": "What I'm working on, how I work, and how I engage with partners and clients to create value.",
         "w": 4,
         "h": 2,
         "motif": "horizon",
         "tone": "gold"
       },
       "panel": {
-        "kicker": "Current projects",
-        "title": "What I'm building now, and how I like to work"
+        "kicker": "Current work and collaboration",
+        "title": "What I'm working on, and how I create value with partners and clients"
       },
       "blocks": [
         {
@@ -850,6 +852,10 @@
               "text": "Helping C-suite teams pivot their organisations quickly to new technologies such as digital intelligence, through short, high-impact engagements that set the course for rapid change."
             },
             {
+              "title": "Teaching",
+              "text": "Teaching assignments and guest lectures on technology, economics, innovation and sustainability, building on lectures at ESCP Business School and talks at LCCA."
+            },
+            {
               "title": "Looking for",
               "text": "Collaborators, partners, investors and boards building solutions in finance, technology and impact."
             },
@@ -861,15 +867,15 @@
         },
         {
           "type": "lede",
-          "text": "How I like to work"
+          "text": "How I engage"
         },
         {
           "type": "p",
-          "text": "I do my best work where the value we create together is the point. I'm most interested in partnerships, equity or shared-upside arrangements, and long-term collaborations, where reward follows the value created rather than time billed."
+          "text": "I work on conventional consulting and advisory terms, and I'm especially drawn to partnerships, equity or shared-upside arrangements and long-term collaborations, where reward follows the value we create together."
         },
         {
           "type": "p",
-          "text": "If you're building something worthwhile and prefer to work that way too, I'd be glad to hear from you."
+          "text": "If you're building something worthwhile and would like to work together, I'd be glad to hear from you."
         },
         {
           "type": "email"
