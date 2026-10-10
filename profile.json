@@ -35,24 +35,24 @@
       },
       "panel": {
         "kicker": "About me",
-        "title": "How economics changes when technology arrives"
+        "title": "How human systems and economics change when technology arrives"
       },
       "blocks": [
         {
           "type": "lede",
-          "text": "One question has run through my career: how does economics evolve when new technology arrives?"
+          "text": "One question has run through my career: how do people and economies evolve when new technology arrives?"
         },
         {
           "type": "p",
-          "text": "I trained in classical economics and business, then went on to the London School of Economics for an MSc, studying how new media and information systems, at the dawn of social media, would shape the evolution of social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
+          "text": "I trained in classical economics and business, then went to the London School of Economics for an MSc, studying how new media and information systems, at the dawn of social media, were shaping the evolution of social and economic systems. I then spent eight years inside the machinery of capital, structuring cross-asset derivatives at Citigroup and investments at EFG Private Bank."
         },
         {
           "type": "p",
-          "text": "In 2011–12 Satoshi Nakamoto's paper made that question real: an information system redesigning money, trust and institutions. I left banking in 2012 to follow it."
+          "text": "By 2011–12 a new field was emerging: decentralised systems and distributed economics, driven by Satoshi Nakamoto's 2008 paper. Here was an information system redesigning money, trust and institutions. I left banking in 2012 to follow it and see it work in the real world."
         },
         {
           "type": "p",
-          "text": "Since then the pattern has repeated. Find the shift early, learn its economics, technology and incentives properly, then put it to work: in a Himalayan village, at a London market stall, in a carbon registry, inside an AI system, and in policy."
+          "text": "Since then the pattern has repeated. Find the shift early, learn its economics, technology and incentives properly, then put it to work: in a Himalayan village, at a London market stall, in a gamified augmented-reality world, in natural assets, inside an AI system and in policy."
         },
         {
           "type": "groups",
@@ -94,7 +94,7 @@
         {
           "type": "p",
           "muted": true,
-          "text": "Deep multidisciplinary rather than a generalist: I go far enough into each field to build something that works, then connect it to everything else I know."
+          "text": "Deeply multidisciplinary: I enjoy going deep enough into a new field to build something that really works, then connecting it to everything else I know."
         }
       ]
     },
@@ -535,7 +535,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Born in Shimla, in the Himalayan hills, into a family of professionals, and educated in cities across the world."
+          "text": "Born in Shimla, in the Himalayan hills, into a family of doctors, engineers and lawyers. Educated in cities around the world."
         },
         {
           "type": "cards",
@@ -564,7 +564,7 @@
         {
           "type": "p",
           "muted": true,
-          "text": "Several of my creative ventures began by solving small problems for the people around me. Himalayan People started as a way to connect communities near where I was born to digital markets. Festival People is a game I designed so my family could celebrate festivals together from wherever we were. Green Intelligence came from noticing that capable, hardworking project developers in rural communities struggled to pitch their work to funders and grant makers. It now does that for them, leaving them free to get on with their real work, which is in atoms, not digits."
+          "text": "Several of my creative ventures began by solving small problems for the people around me. Himalayan People started as a way to connect communities near where I was born to digital markets. Festival People is a game I designed so my family could celebrate festivals together from wherever we were. Green Intelligence came from noticing that hardworking small enterprises and makers in rural communities struggled to pitch their work to funders and grant makers. It now does that for them, leaving them free to get on with their real work, which is in atoms, not digits."
         },
         {
           "type": "media",
@@ -660,7 +660,7 @@
       "tile": {
         "title": "Media",
         "meta": "Photos & video",
-        "teaser": "Talks, panels, podcast and a few moments in between.",
+        "teaser": "Talks, panels and life moments in between.",
         "w": 4,
         "h": 2,
         "motif": "frames",
@@ -683,9 +683,9 @@
               "linkText": "YouTube"
             },
             {
-              "src": "himachilli-team.webp",
-              "alt": "Four people in blue aprons holding Himachilli sauces and preserves, with forested hills behind",
-              "caption": "With the Himachilli team in Himachal"
+              "src": "afrp9-roundtable.webp",
+              "alt": "Listening during a roundtable discussion",
+              "caption": "Roundtable at AfRP-9, Windhoek"
             },
             {
               "src": "greenpeople-stand.webp",
@@ -715,9 +715,9 @@
               "caption": "UNDRR AfRP-9, Windhoek"
             },
             {
-              "src": "afrp9-roundtable.webp",
-              "alt": "Listening during a roundtable discussion",
-              "caption": "Roundtable at AfRP-9, Windhoek"
+              "src": "himachilli-team.webp",
+              "alt": "Four people in blue aprons holding Himachilli sauces and preserves, with forested hills behind",
+              "caption": "With the Himachilli team in Himachal"
             },
             {
               "src": "field-visit.webp",
