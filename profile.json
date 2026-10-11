@@ -1,7 +1,7 @@
 {
   "name": "Anuj Kapoor",
   "places": [],
-  "roleLine": "Venture & Product Builder",
+  "roleLine": "Venture Builder",
   "thesis": {
     "text": "I go where technology is rewriting economics and markets,",
     "emphasis": "and build there."
@@ -27,7 +27,7 @@
       "tile": {
         "title": "About me",
         "meta": "The short version",
-        "teaser": "Venture and product builder, asking one question for twenty years.",
+        "teaser": "Venture builder, asking one question for twenty years.",
         "w": 4,
         "h": 2,
         "motif": "contour",
@@ -52,7 +52,7 @@
         },
         {
           "type": "p",
-          "text": "Since then the pattern has repeated. Find the shift early, learn its economics, technology and incentives properly, then put it to work: in a Himalayan village, at a London market stall, in a gamified augmented-reality world, in natural assets, inside an AI system and in policy."
+          "text": "From peer-to-peer economic systems and decentralised communication platforms to the semantic web and digital intelligence, I look to spot each evolutionary step in technology early, learn its economic and social impact in depth, then put it to work where it can make a difference: in a Himalayan village, at a London market stall, in a gamified augmented-reality world, in natural assets, in renewable energy infrastructure, inside an AI system and in policy."
         },
         {
           "type": "groups",
@@ -61,6 +61,7 @@
               "title": "Venture building",
               "tags": [
                 "Founder, three ventures",
+                "Product design & build",
                 "Supply chains",
                 "Go-to-market"
               ]
