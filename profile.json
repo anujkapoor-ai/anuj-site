@@ -6,7 +6,7 @@
     "text": "I go where technology is rewriting economics and markets,",
     "emphasis": "and build there."
   },
-  "strap": "Right now that means making a forest as legible to markets as a bond, threading solar energy systems with a distributed platform, putting Himalayan supply chains on digital rails from loom to London, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a banker and technology strategist, wired as a founder, and drawn into policy and advisory because the future needs better rules, I spend half my time thinking ten years ahead and the other half building towards it.",
+  "strap": "Right now that means making a forest as legible to markets as a bond, threading solar energy systems with a distributed platform, putting Himalayan supply chains on digital rails, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a banker and technology strategist, wired as a founder, and drawn into policy and advisory because the future needs better rules, I spend half my time thinking five years ahead and the other half building towards it.",
   "email": "anuj.kapoor@gmail.com",
   "links": [
     {
@@ -40,7 +40,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "One question has run through my career: how do people and economies evolve when new technology arrives?"
+          "text": "One question has run through my career: how do people and their economics evolve when new technology arrives?"
         },
         {
           "type": "p",
@@ -52,7 +52,7 @@
         },
         {
           "type": "p",
-          "text": "From peer-to-peer economic systems and decentralised communication platforms to the semantic web and digital intelligence, I look to spot each evolutionary step in technology early, learn its economic and social impact in depth, then put it to work where it can make a difference: in a Himalayan village, at a London market stall, in a gamified augmented-reality world, in natural assets, in renewable energy infrastructure, inside an AI system and in policy."
+          "text": "From peer-to-peer economic systems and decentralised communication platforms to the semantic web and digital intelligence, I look to spot each evolutionary step in technology early, learn its economic and social impact in depth, then put it to work where it can make a difference: in a Himalayan village, in a gamified augmented-reality world, in natural assets, in renewable energy infrastructure, inside an AI system and in policy."
         },
         {
           "type": "groups",
@@ -846,7 +846,7 @@
           "items": [
             {
               "title": "Building",
-              "text": "Taking Green Intelligence from framework to the default data layer for environmental projects, registries and funders."
+              "text": "Taking Green Intelligence from framework to the default data layer for renewable energy, carbon market and environmental projects, registries and funders."
             },
             {
               "title": "Advising",
@@ -854,7 +854,7 @@
             },
             {
               "title": "Teaching",
-              "text": "Teaching assignments and guest lectures on technology, economics, innovation and sustainability, building on lectures at ESCP Business School and talks at LCCA."
+              "text": "Teaching assignments and guest lectures on technology, economics, innovation and sustainability, at business schools, on undergraduate programmes and in corporate learning sessions."
             },
             {
               "title": "Looking for",
@@ -892,7 +892,7 @@
     "Strategy",
     "Policy"
   ],
-  "welcome": "Hi, feel free to look around, and get in touch if you'd like to chat.",
+  "welcome": "Hi, feel free to look around, and get in touch if you'd like to connect.",
   "contact": {
     "endpoint": "https://formsubmit.co/ajax/anuj.kapoor@gmail.com",
     "title": "Message Anuj",
