@@ -63,7 +63,9 @@
                 "Founder, three ventures",
                 "Product design & build",
                 "Supply chains",
-                "Go-to-market"
+                "Go-to-market",
+                "Energy market solutions",
+                "Carbon market solutions"
               ]
             },
             {
@@ -219,7 +221,7 @@
             {
               "when": "Panel",
               "title": "Impact Week, Singapore",
-              "text": "Panel on impact measurement."
+              "text": "Spoke on the panel on impact measurement, discussing data, transparency and the new tools available for impact tracking."
             },
             {
               "when": "Lecture",
@@ -229,7 +231,7 @@
             {
               "when": "Summit",
               "title": "Global Sustainability and Finance Summit, Verbier",
-              "text": "Presented at the summit in Verbier, Switzerland."
+              "text": "Presented on the role of technology-enabled carbon and biodiversity net gain markets, at the summit in Verbier, Switzerland."
             },
             {
               "when": "Presentation",
@@ -251,7 +253,7 @@
         {
           "type": "p",
           "muted": true,
-          "text": "When you build at the leading edge of innovation, it matters to share what you learn with the people setting the rules and policies for a new paradigm. I have been fortunate to be in the rooms where those discussions happen, helping make sure the new road is built for both speed and safety."
+          "text": "When you build at the leading edge of innovation, it matters to share what you learn with the people setting the rules and policies for the new, emerging paradigm. I have been fortunate to be in the rooms where those discussions happen, helping make sure the new road is built for both speed and safety."
         }
       ]
     },
@@ -282,7 +284,9 @@
                 "Fintech",
                 "E-commerce",
                 "Supply chains",
-                "Go-to-market"
+                "Go-to-market",
+                "Energy market solutions",
+                "Carbon market solutions"
               ]
             },
             {
@@ -343,15 +347,15 @@
       "blocks": [
         {
           "type": "p",
-          "text": "My MBA gave me the classical core: economics, finance and business. I went to the LSE to add a second layer, new technology and how economics itself changes with it. In 2024–25 I added a third at Cambridge: sustainability leadership."
+          "text": "My MBA gave me the classical core: economics, finance and business. I went to the LSE to add a second layer, new technology and how economics itself changes with it. In 2024–25 I took my start-up, GreenPeople.earth, through the Canopy Programme at the Cambridge Institute for Sustainability Leadership."
         },
         {
           "type": "cards",
           "items": [
             {
-              "label": "Canopy Programme · 2024–2025",
+              "label": "Start-up programme · 2024–2025",
               "title": "University of Cambridge",
-              "text": "Institute for Sustainability Leadership (CISL)."
+              "text": "Canopy Programme at the Institute for Sustainability Leadership (CISL), with my start-up GreenPeople.earth."
             },
             {
               "label": "MSc · 2002–2003",
@@ -872,11 +876,11 @@
         },
         {
           "type": "p",
-          "text": "I work on conventional consulting and advisory terms, and I'm especially drawn to partnerships, equity or shared-upside arrangements and long-term collaborations, where reward follows the value we create together."
+          "text": "I prefer partnerships, equity or shared-upside arrangements and long-term collaborations, where reward follows the value we create together. I'm always open to partners joining forces with me on the projects I'm working on."
         },
         {
           "type": "p",
-          "text": "If you're building something worthwhile and would like to work together, I'd be glad to hear from you."
+          "text": "Equally, if you're building something you think would benefit from my input, I'd be glad to add value to your work, whether through consulting, advisory or collaboration."
         },
         {
           "type": "email"
