@@ -107,7 +107,7 @@
       "tile": {
         "title": "Career & ventures",
         "meta": "2004 → now",
-        "teaser": "Citigroup and EFG, then Five Benches, GreenPeople.earth and Green Intelligence.",
+        "teaser": "Citigroup, European Financial Group (EFG), Himalayan People, GreenPeople.earth and Green Intelligence.",
         "w": 4,
         "h": 2,
         "motif": "ascent",
@@ -166,7 +166,7 @@
       "tile": {
         "title": "Policy & leadership",
         "meta": "2023 → now",
-        "teaser": "ESG advisory at Westminster, and talks from Verbier and Helsinki to Namibia, Singapore and the WEF.",
+        "teaser": "ESG advisory in Westminster, talks in Verbier, Namibia and Helsinki, a panel in Singapore and a roundtable at the WEF in Davos.",
         "w": 4,
         "h": 2,
         "motif": "columns",
@@ -262,7 +262,7 @@
       "group": "work",
       "tile": {
         "title": "Technical proficiency",
-        "teaser": "Venture building, AI and data systems, finance and structuring, carbon and energy markets, policy and strategy.",
+        "teaser": "Venture building, product development, AI and distributed systems, finance and structuring, carbon and energy markets, policy and strategy.",
         "w": 3,
         "h": 2,
         "motif": "network",
@@ -280,6 +280,7 @@
               "title": "Venture building",
               "tags": [
                 "Product design",
+                "Product development",
                 "UX & goal-led development",
                 "Fintech",
                 "E-commerce",
@@ -293,6 +294,7 @@
               "title": "Technology",
               "tags": [
                 "AI data environments",
+                "Distributed systems",
                 "Data architecture",
                 "DLT & blockchain",
                 "Ledgers & databases",
@@ -334,7 +336,7 @@
       "group": "work",
       "tile": {
         "title": "Academic background",
-        "teaser": "St. Stephen's, IIM Calcutta, the LSE and Cambridge.",
+        "teaser": "St. Stephen's, IIM Calcutta, the LSE and the Cambridge Institute for Sustainability Leadership (Canopy).",
         "w": 4,
         "h": 2,
         "motif": "book",
@@ -381,7 +383,7 @@
       "group": "work",
       "tile": {
         "title": "Publications",
-        "teaser": "2012–2020: Bitcoin, smart money, tea, provenance and entrepreneurship.",
+        "teaser": "Entrepreneurship, distributed systems, AI start-ups, Bitcoin, Himalayan producers and novel economic systems.",
         "meta": "2012 → 2020",
         "w": 5,
         "h": 3,
@@ -478,7 +480,7 @@
       "draft": "Draft · add your own stories",
       "tile": {
         "title": "Experiences & stories",
-        "teaser": "Laptop thieves, a Himalayan chilli on the world map, a Mayfair exit and a London stall.",
+        "teaser": "Tracking laptop thieves in London, Himalayan chilli on the world food map, a Mayfair exit, London market stalls, augmented-reality games and more.",
         "w": 4,
         "h": 2,
         "motif": "holi",
@@ -589,7 +591,7 @@
       "group": "life",
       "tile": {
         "title": "Community work",
-        "teaser": "Catalyst Now and women's self-help groups in Himachal Pradesh.",
+        "teaser": "Chilli farmers and tea growers in rural India, women's self-help groups in the Himalayas, and a global digital collaborative.",
         "w": 5,
         "h": 2,
         "motif": "people",
