@@ -166,7 +166,7 @@
       "tile": {
         "title": "Policy & leadership",
         "meta": "2023 → now",
-        "teaser": "ESG advisory in Westminster, talks in Verbier, Namibia and Helsinki, a panel in Singapore and a roundtable at the WEF in Davos.",
+        "teaser": "ESG advisory in Westminster, talks in Verbier, Namibia, Helsinki and Singapore, lectures to graduate students in London, and a roundtable at the WEF in Davos.",
         "w": 4,
         "h": 2,
         "motif": "columns",
@@ -513,12 +513,24 @@
               "text": "Leaving a Mayfair private bank in 2012 to work on an idea most of finance still called a toy."
             },
             {
-              "title": "Village to market stall",
-              "text": "Helping weavers move from craft to repeatable production, then flying to London to set up the stall, pitch the product and sell it face to face."
+              "title": "Village to market stalls",
+              "text": "Helping weavers move from craft to repeatable production, then flying to London to run market stalls in Hampstead, Marylebone, Spitalfields, Chelsea and beyond, pitching the product and selling it face to face."
             },
             {
               "title": "St. Gallen and Trondheim",
               "text": "The ISC Symposium in Switzerland and ISFiT, the international student festival in Norway."
+            },
+            {
+              "title": "Debussy in mixed media",
+              "text": "A mixed-media concert at the Royal Academy of Music, London. I created a visual installation to accompany classical pianist Caroline Ryu playing Claude Debussy's Preludes: a first-of-its-kind symbolic rendition of a piano recital in mixed media."
+            },
+            {
+              "title": "The Fate of Choice",
+              "text": "I wrote and produced The Fate of Choice, a short film shot around London with students from the London Film School. It was featured at the Los Angeles Short Film Festival and screened at a theatre in West London."
+            },
+            {
+              "title": "Kangra miniatures in Mayfair",
+              "text": "I curated a Himalayan arts and crafts exhibition at the Nehru Centre in Mayfair, London, showing for the first time outside India miniature paintings in the Kangra tradition by students of the Chitera Art School."
             }
           ]
         }
@@ -542,7 +554,7 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "Born in Shimla, in the Himalayan hills, into a family of doctors, engineers and lawyers. Educated in cities around the world."
+          "text": "Born and raised in Shimla, a small Himalayan hill station in north India, into a family of doctors, engineers and lawyers. Educated in cities around the world, I now live in London and work on projects in both India and the UK, and in several countries in Africa."
         },
         {
           "type": "cards",
@@ -629,7 +641,7 @@
       "group": "life",
       "tile": {
         "title": "Interests",
-        "teaser": "Classical music, hiking, cycling, travel, futurism and good cafés and pubs.",
+        "teaser": "Classical music, writing, film and mixed media, hiking, cycling, travel, futurism and good cafés and pubs.",
         "w": 4,
         "h": 1,
         "motif": "music",
@@ -654,6 +666,8 @@
             "Travel",
             "Futurism",
             "Writing",
+            "Film",
+            "Mixed media",
             "Festivals",
             "Games & AR",
             "Cafés & pubs"
