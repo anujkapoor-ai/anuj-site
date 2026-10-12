@@ -245,6 +245,8 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .media iframe.podcast { aspect-ratio: auto; height: 175px; border-radius: 12px; }
 .media figcaption a { color: var(--accent-ink); text-underline-offset: 3px; }
 .media figure.is-youtube, .media figure.is-podcast { grid-column: 1 / -1; }
+.mini-links { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: 14px; }
+.mini-links a { color: var(--accent-ink); }
 .media.collage { display: block; columns: 3 210px; column-gap: 12px; }
 .media.collage.cols { display: flex; gap: 12px; align-items: flex-start; columns: auto; }
 .media.collage.cols .col { flex: 1; min-width: 0; }
@@ -452,7 +454,8 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     cards: function (b) {
       return h('div', { class: 'cards2' }, b.items.map(function (c) {
         var t = c.url ? h('a', { href: c.url, target: '_blank', rel: 'noopener', text: c.title + ' ↗' }) : c.title;
-        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', null, [t]), c.text ? h('p', { text: c.text }) : null]);
+        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', null, [t]), c.text ? h('p', { text: c.text }) : null,
+          c.links ? h('p', { class: 'mini-links' }, c.links.map(function (l) { return h('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label + ' ↗' }); })) : null]);
       }));
     },
     groups: function (b) { return h('div', { class: 'groups' }, b.items.map(function (g) { return h('div', null, [h('h3', { text: g.title }), tagList(g.tags)]); })); },
