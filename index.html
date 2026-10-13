@@ -343,6 +343,9 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .bubble.them { background: var(--surface); border: 1px solid var(--line); border-bottom-left-radius: 4px; justify-self: start; }
 .bubble.me { background: color-mix(in srgb, var(--accent) 22%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); border-bottom-right-radius: 4px; justify-self: end; white-space: pre-wrap; }
 .bubble a { color: var(--accent-ink); }
+.msg-chips { display: flex; flex-wrap: wrap; gap: 6px; justify-self: start; }
+.msg-chip { font: 500 13.5px var(--body); color: var(--accent-ink); background: var(--surface); border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--line)); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.msg-chip:hover { background: color-mix(in srgb, var(--accent) 14%, var(--surface)); }
 .msg-form { display: grid; gap: 8px; padding: 12px; border-top: 1px solid var(--line); background: var(--surface); }
 .msg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 @media (max-width: 420px) { .msg-row { grid-template-columns: 1fr; } }
@@ -717,13 +720,29 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     if (!msgContact) return;
     msg.hidden = false; msg.classList.remove('in'); void msg.offsetWidth; msg.classList.add('in');
     fab.setAttribute('aria-expanded', 'true');
-    if (!greeted) { bubble('them', msgContact.greeting || 'Hi, leave a message and I will get back to you.'); greeted = true; }
+    if (!greeted) {
+      bubble('them', msgContact.greeting || 'Hi, leave a message and I will get back to you.'); greeted = true;
+      if (msgContact.quick && msgContact.quick.length) {
+        var chips = h('div', { class: 'msg-chips' }, msgContact.quick.map(function (qa) {
+          var c = h('button', { class: 'msg-chip', type: 'button', text: qa.q });
+          c.addEventListener('click', function () { bubble('me', qa.q); setTimeout(function () { bubble('them', qa.a); }, 350); });
+          return c;
+        }));
+        thread.appendChild(chips);
+      }
+    }
     setTimeout(function () { ($('msg-name').value ? $('msg-text') : $('msg-name')).focus(); }, 50);
   }
   function closeMsg() { msg.hidden = true; fab.setAttribute('aria-expanded', 'false'); fab.focus(); }
   fab.addEventListener('click', function () { msg.hidden ? openMsg() : closeMsg(); });
   $('msg-close').addEventListener('click', closeMsg);
   msg.addEventListener('keydown', function (e) { if (e.key === 'Escape') { e.stopPropagation(); closeMsg(); } });
+  // A light, free assistant: answers a few basics from profile.json, then hands everything to Anuj by email.
+  function assistantReply(text) {
+    var t = text.toLowerCase(), faq = msgContact.faq || [];
+    for (var i = 0; i < faq.length; i++) for (var j = 0; j < faq[i].keys.length; j++) if (t.indexOf(faq[i].keys[j]) !== -1) return faq[i].a;
+    return msgContact.fallback || '';
+  }
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var name = $('msg-name').value.trim(), email = $('msg-email').value.trim(), text = $('msg-text').value.trim(), note = $('msg-note');
@@ -731,13 +750,15 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { note.textContent = 'Please add an email address so I can reply.'; return; }
     if ($('msg-hp').value) return;
     note.textContent = ''; bubble('me', text);
+    var reply = assistantReply(text);
     var send = $('msg-send'); send.disabled = true; send.textContent = 'Sending…';
     fetch(msgContact.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ name: name, email: email, message: text, _subject: 'New message from your website: ' + name, _template: 'table', _captcha: 'false' }) })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (res) {
         if (res && (res.success === false || res.success === 'false')) throw new Error('rejected');
-        bubble('them', 'Thanks, ' + name.split(' ')[0] + '. Your message is on its way, and I will reply to ' + email + '.');
+        if (reply) bubble('them', reply);
+        bubble('them', (msgContact.handoff || 'Thanks, your message is on its way to Anuj. He will reply to {email}.').replace('{email}', email));
         $('msg-text').value = '';
       })
       .catch(function () {

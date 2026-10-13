@@ -27,7 +27,7 @@
       "tile": {
         "title": "About me",
         "meta": "The short version",
-        "teaser": "Venture builder, asking one question for twenty years.",
+        "teaser": "Venture builder. Twenty years refining one framework: absorb the new technology, work out what it changes, then build.",
         "w": 4,
         "h": 2,
         "motif": "contour",
@@ -936,6 +936,112 @@
   "contact": {
     "endpoint": "https://formsubmit.co/ajax/anuj.kapoor@gmail.com",
     "title": "Message Anuj",
-    "greeting": "Hi, thanks for stopping by. Leave a note here and I'll get back to you by email."
+    "greeting": "Hi, I'm Anuj's site assistant. Ask me something quick, or leave a note and I'll pass it straight to Anuj.",
+    "quick": [
+      {
+        "q": "What is Anuj working on?",
+        "a": "Right now Anuj is building Green Intelligence at GreenPeople.earth: a data layer for renewable energy, carbon market and environmental projects, their registries and funders."
+      },
+      {
+        "q": "Speaking and teaching",
+        "a": "Anuj gives talks, guest lectures and roundtable contributions on technology, economics, innovation and sustainability, for business schools, undergraduate programmes, corporate learning sessions and policy forums. Send the date, audience and topic and he'll come back to you."
+      },
+      {
+        "q": "Working together",
+        "a": "Anuj prefers partnerships, equity or shared-upside arrangements and long-term collaborations, and is also open to consulting and advisory work. A line on what you're building helps him reply quickly."
+      }
+    ],
+    "faq": [
+      {
+        "keys": [
+          "working on",
+          "green intelligence",
+          "greenpeople",
+          "green people",
+          "startup",
+          "start-up",
+          "company"
+        ],
+        "a": "Anuj is currently building Green Intelligence at GreenPeople.earth, a data layer for renewable energy, carbon market and environmental projects."
+      },
+      {
+        "keys": [
+          "speak",
+          "talk",
+          "panel",
+          "keynote",
+          "lecture",
+          "teach",
+          "guest",
+          "podcast",
+          "event",
+          "conference"
+        ],
+        "a": "Anuj does take on talks, guest lectures and panels. The date, audience and topic will help him decide quickly."
+      },
+      {
+        "keys": [
+          "collaborat",
+          "partner",
+          "invest",
+          "board",
+          "advis",
+          "consult",
+          "hire",
+          "work with",
+          "project",
+          "equity",
+          "fee",
+          "rate"
+        ],
+        "a": "Anuj is open to partnerships, advisory and consulting, and especially to shared-upside arrangements. He'll want to hear what you're building."
+      },
+      {
+        "keys": [
+          "himalayan",
+          "chilli",
+          "chukh",
+          "tea",
+          "shawl",
+          "weav",
+          "buy",
+          "shop",
+          "woolaah"
+        ],
+        "a": "For Himalayan products, have a look at himalayanpeople.com and woolaah.com. Anything more specific is better answered by Anuj."
+      },
+      {
+        "keys": [
+          "lab",
+          "white paper",
+          "whitepaper",
+          "access",
+          "prototype"
+        ],
+        "a": "The ideas lab is by invitation. Say what interests you and Anuj will decide about access."
+      },
+      {
+        "keys": [
+          "where",
+          "based",
+          "london",
+          "india",
+          "africa",
+          "meet"
+        ],
+        "a": "Anuj is based in London and works on projects in India, the UK and several countries in Africa."
+      },
+      {
+        "keys": [
+          "cv",
+          "resume",
+          "résumé",
+          "linkedin"
+        ],
+        "a": "The tiles here cover most of it, and LinkedIn has the rest. If you need something specific, Anuj can send it."
+      }
+    ],
+    "fallback": "Good question. Better Anuj picks this one up himself.",
+    "handoff": "I've passed this to Anuj. He'll reply to {email}."
   }
 }
