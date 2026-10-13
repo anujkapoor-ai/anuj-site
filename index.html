@@ -285,7 +285,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
   .branch .sw3 { animation-duration: 9.8s; animation-delay: -6s; }
 }
 @keyframes sway { from { transform: translate(-1.2px, 0) rotate(-1deg); } to { transform: translate(1.4px, -.6px) rotate(1.2deg); } }
-.token-leaf { position: absolute; width: 20px; aspect-ratio: 16 / 20; opacity: 0; pointer-events: none; }
+.token-leaf { position: absolute; width: 24px; aspect-ratio: 16 / 20; opacity: 0; pointer-events: none; }
 .token-leaf svg { width: 100%; height: 100%; display: block; overflow: visible; filter: drop-shadow(0 1px 2px rgba(198, 138, 38, .35)); }
 .token-leaf .lf { fill: color-mix(in srgb, var(--accent) 30%, var(--surface)); stroke: var(--accent); stroke-width: .7; }
 .token-leaf .tk { font: 700 6.5px var(--display); fill: var(--accent-ink); }
@@ -293,6 +293,8 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 .tl2 { left: 48%; top: 46vh; --dx: -30px; animation: fall 34s linear 8s infinite; }
 .tl3 { left: 10%; top: 40vh; --dx: 55px;  animation: fall 32s linear 16s infinite; }
 .tl4 { left: 62%; top: 30vh; --dx: -45px; animation: fall 36s linear 24s infinite; }
+.tl5 { left: 34%; top: 36vh; --dx: 35px;  animation: fall 31s linear 4s infinite; }
+.tl6 { left: 74%; top: 44vh; --dx: -38px; animation: fall 33s linear 20s infinite; }
 @keyframes fall {
   0%   { opacity: 0; transform: translate(0, 0) rotate(0deg); }
   5%   { opacity: 1; }
@@ -306,7 +308,7 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
   .token-leaf { animation: none; opacity: 1; }
   .tl1 { transform: translate(14px, 12vh) rotate(25deg); }
   .tl2 { transform: translate(-18px, 22vh) rotate(-20deg); }
-  .tl3, .tl4 { display: none; }
+  .tl3, .tl4, .tl5, .tl6 { display: none; }
 }
 /* Tablets in landscape: a slimmer oak rail */
 @media (min-width: 1024px) and (max-width: 1239px) {
@@ -317,11 +319,12 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 /* Phones and tablets in portrait: the oak grows inside the intro box instead */
 .hero-oak { display: none; }
 @media (max-width: 1023px) {
-  .hero > .hero-oak { display: block; position: absolute; right: 0; bottom: 0; width: min(44%, 250px); height: 100%; z-index: 0; pointer-events: none; opacity: .5; }
+  .hero > .hero-oak { display: block; position: absolute; right: 0; bottom: 0; width: min(44%, 250px); height: 100%; z-index: 0; pointer-events: none; }
+  .hero-oak svg.branch { opacity: .5; }
   .hero-oak svg.branch { position: absolute; right: 0; bottom: 0; width: 100%; height: 100%; overflow: visible; }
-  .hero-oak .tl1 { top: 10%; } .hero-oak .tl2 { top: 4%; } .hero-oak .tl3 { top: 16%; } .hero-oak .tl4 { top: 22%; }
+  .hero-oak .tl1 { top: 10%; } .hero-oak .tl2 { top: 4%; } .hero-oak .tl3 { top: 16%; } .hero-oak .tl4 { top: 22%; } .hero-oak .tl5 { top: 28%; } .hero-oak .tl6 { top: 34%; }
 }
-@media (max-width: 600px) { .hero > .hero-oak { opacity: .38; width: 52%; } }
+@media (max-width: 600px) { .hero > .hero-oak { width: 52%; } .hero-oak svg.branch { opacity: .38; } }
 /* Welcome line */
 .welcome { font: 500 clamp(16px, 1.7vw, 18px) var(--display); color: var(--accent-ink); margin: 0 0 14px; }
 
@@ -399,6 +402,8 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
       <span class="token-leaf tl2"><svg viewBox="-8 -18 16 20"><path class="lf" d="M0 0 C -1.6 -2.4, -4.8 -2.4, -4 -4.8 C -6.4 -5.6, -5.6 -8, -3.2 -8 C -5.6 -10.4, -4 -12.8, -1.6 -12 C -1.6 -14.4, 0 -16, 0 -16 C 0 -16, 1.6 -14.4, 1.6 -12 C 4 -12.8, 5.6 -10.4, 3.2 -8 C 5.6 -8, 6.4 -5.6, 4 -4.8 C 4.8 -2.4, 1.6 -2.4, 0 0 Z"/><text class="tk" x="0" y="-5.2" text-anchor="middle">T</text></svg></span>
       <span class="token-leaf tl3"><svg viewBox="-8 -18 16 20"><path class="lf" d="M0 0 C -1.6 -2.4, -4.8 -2.4, -4 -4.8 C -6.4 -5.6, -5.6 -8, -3.2 -8 C -5.6 -10.4, -4 -12.8, -1.6 -12 C -1.6 -14.4, 0 -16, 0 -16 C 0 -16, 1.6 -14.4, 1.6 -12 C 4 -12.8, 5.6 -10.4, 3.2 -8 C 5.6 -8, 6.4 -5.6, 4 -4.8 C 4.8 -2.4, 1.6 -2.4, 0 0 Z"/><text class="tk" x="0" y="-5.2" text-anchor="middle">T</text></svg></span>
       <span class="token-leaf tl4"><svg viewBox="-8 -18 16 20"><path class="lf" d="M0 0 C -1.6 -2.4, -4.8 -2.4, -4 -4.8 C -6.4 -5.6, -5.6 -8, -3.2 -8 C -5.6 -10.4, -4 -12.8, -1.6 -12 C -1.6 -14.4, 0 -16, 0 -16 C 0 -16, 1.6 -14.4, 1.6 -12 C 4 -12.8, 5.6 -10.4, 3.2 -8 C 5.6 -8, 6.4 -5.6, 4 -4.8 C 4.8 -2.4, 1.6 -2.4, 0 0 Z"/><text class="tk" x="0" y="-5.2" text-anchor="middle">T</text></svg></span>
+      <span class="token-leaf tl5"><svg viewBox="-8 -18 16 20"><path class="lf" d="M0 0 C -1.6 -2.4, -4.8 -2.4, -4 -4.8 C -6.4 -5.6, -5.6 -8, -3.2 -8 C -5.6 -10.4, -4 -12.8, -1.6 -12 C -1.6 -14.4, 0 -16, 0 -16 C 0 -16, 1.6 -14.4, 1.6 -12 C 4 -12.8, 5.6 -10.4, 3.2 -8 C 5.6 -8, 6.4 -5.6, 4 -4.8 C 4.8 -2.4, 1.6 -2.4, 0 0 Z"/><text class="tk" x="0" y="-5.2" text-anchor="middle">T</text></svg></span>
+      <span class="token-leaf tl6"><svg viewBox="-8 -18 16 20"><path class="lf" d="M0 0 C -1.6 -2.4, -4.8 -2.4, -4 -4.8 C -6.4 -5.6, -5.6 -8, -3.2 -8 C -5.6 -10.4, -4 -12.8, -1.6 -12 C -1.6 -14.4, 0 -16, 0 -16 C 0 -16, 1.6 -14.4, 1.6 -12 C 4 -12.8, 5.6 -10.4, 3.2 -8 C 5.6 -8, 6.4 -5.6, 4 -4.8 C 4.8 -2.4, 1.6 -2.4, 0 0 Z"/><text class="tk" x="0" y="-5.2" text-anchor="middle">T</text></svg></span>
     </div>
   </aside>
 </div>
