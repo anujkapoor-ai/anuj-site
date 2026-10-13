@@ -505,8 +505,14 @@
               "text": "A mixed-media concert at the Royal Academy of Music, London. I created a visual installation to accompany classical pianist Caroline Ryu playing Claude Debussy's Preludes: a first-of-its-kind symbolic rendition of a piano recital in mixed media."
             },
             {
-              "title": "Holi from anywhere",
-              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I designed Festival People. It ended up as a small gaming app, made purely for fun."
+              "title": "Village to market stalls",
+              "text": "Helping weavers move from craft to repeatable production, then flying to London to run market stalls in Hampstead, Marylebone, Spitalfields, Chelsea and beyond, pitching the product and selling it face to face.",
+              "links": [
+                {
+                  "label": "Woolaah",
+                  "url": "https://woolaah.com/"
+                }
+              ]
             },
             {
               "title": "Chamba Chukh, from a remote valley to the world map",
@@ -531,14 +537,8 @@
               "text": "Leaving a Mayfair private bank in 2012 to work on an idea most of finance still called a toy."
             },
             {
-              "title": "Village to market stalls",
-              "text": "Helping weavers move from craft to repeatable production, then flying to London to run market stalls in Hampstead, Marylebone, Spitalfields, Chelsea and beyond, pitching the product and selling it face to face.",
-              "links": [
-                {
-                  "label": "Woolaah",
-                  "url": "https://woolaah.com/"
-                }
-              ]
+              "title": "Holi from anywhere",
+              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I designed Festival People. It ended up as a small gaming app, made purely for fun."
             },
             {
               "title": "St. Gallen and Trondheim",
