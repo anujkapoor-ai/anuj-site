@@ -551,7 +551,7 @@
       "group": "life",
       "tile": {
         "title": "Home & family",
-        "teaser": "Born and raised in the hills around Shimla, now living between there and London.",
+        "teaser": "Born and raised in the hills around Shimla, now living in England and working across the globe.",
         "w": 3,
         "h": 3,
         "motif": "mountains",
@@ -587,7 +587,7 @@
             {
               "label": "Partner",
               "title": "Digital transformation",
-              "text": "Specialist in digital transformation, with leadership roles including Global Head of Digital Strategy and Head of Product, and software consulting for world-leading organisations. Passionate about animal welfare."
+              "text": "Leadership roles in digital transformation, including Global Head of Digital Strategy and Head of Product, and software consulting for world-leading organisations. Dog lover and passionate supporter of animal welfare programmes."
             }
           ],
           "cols": 2
