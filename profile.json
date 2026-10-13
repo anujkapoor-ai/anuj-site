@@ -137,11 +137,6 @@
               ]
             },
             {
-              "when": "Side project",
-              "title": "Festival People · Designer and Builder",
-              "text": "A game I designed so my family could celebrate Holi and other festivals together from wherever we were. It became a small gaming app, made for the fun of it."
-            },
-            {
               "when": "2012 – 2013",
               "title": "Trading digital assets and working on distributed systems",
               "text": "Trading and experimenting with Bitcoin and other digital assets while researching distributed systems: white papers on data harvesting, intelligence and consensus for proof-of-truth systems, and DLT use cases in finance, supply chains and data validation."
@@ -537,7 +532,7 @@
             },
             {
               "title": "Holi from anywhere",
-              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I designed Festival People. It ended up as a small gaming app, made purely for fun."
+              "text": "Wanting to celebrate Holi and other festivals with my family wherever I was, I designed Festive People. It ended up as a small gaming app, made purely for fun."
             },
             {
               "title": "St. Gallen and Trondheim",
@@ -598,7 +593,7 @@
         {
           "type": "p",
           "muted": true,
-          "text": "Several of my creative ventures began by solving small problems for the people around me. Himalayan People started as a way to connect communities near where I was born to digital markets. Festival People is a game I designed so my family could celebrate festivals together from wherever we were. Green Intelligence came from noticing that hardworking small enterprises and makers in rural communities struggled to pitch their work to funders and grant makers. It now does that for them, leaving them free to get on with their real work, which is in atoms, not digits."
+          "text": "Several of my creative ventures began by solving small problems for the people around me. Himalayan People started as a way to connect communities near where I was born to digital markets. Festive People is a game I designed so my family could celebrate festivals together from wherever we were. Green Intelligence came from noticing that hardworking small enterprises and makers in rural communities struggled to pitch their work to funders and grant makers. It now does that for them, leaving them free to get on with their real work, which is in atoms, not digits."
         },
         {
           "type": "media",
@@ -1060,6 +1055,10 @@
     {
       "text": "carbon market and environmental projects",
       "url": "https://app.greenpeople.earth"
+    },
+    {
+      "text": "Festive People",
+      "url": "https://festivepeople.com/"
     }
   ]
 }
