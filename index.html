@@ -305,6 +305,20 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
   .tl2 { transform: translate(-18px, 22vh) rotate(-20deg); }
   .tl3, .tl4 { display: none; }
 }
+/* Tablets in landscape: a slimmer oak rail */
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .wrap { display: grid; grid-template-columns: minmax(0, 1fr) 150px; column-gap: 18px; }
+  .tree-rail { display: block; }
+  .branch-wrap { transform: scale(.7); transform-origin: 100% 100%; }
+}
+/* Phones and tablets in portrait: the oak grows inside the intro box instead */
+.hero-oak { display: none; }
+@media (max-width: 1023px) {
+  .hero > .hero-oak { display: block; position: absolute; right: 0; bottom: 0; width: min(44%, 250px); height: 100%; z-index: 0; pointer-events: none; opacity: .5; }
+  .hero-oak svg.branch { position: absolute; right: 0; bottom: 0; width: 100%; height: 100%; overflow: visible; }
+  .hero-oak .tl1 { top: 10%; } .hero-oak .tl2 { top: 4%; } .hero-oak .tl3 { top: 16%; } .hero-oak .tl4 { top: 22%; }
+}
+@media (max-width: 600px) { .hero > .hero-oak { opacity: .38; width: 52%; } }
 /* Welcome line */
 .welcome { font: 500 clamp(16px, 1.7vw, 18px) var(--display); color: var(--accent-ink); margin: 0 0 14px; }
 
@@ -525,6 +539,13 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
       wn.append(d.workNote + ' ', a, ' →');
     }
     var hm = motif('mountains'); if (hm) $('hero').appendChild(hm);
+    var rail = document.querySelector('.branch-wrap');
+    if (rail && !document.querySelector('.hero-oak')) {
+      var ho = document.createElement('div'); ho.className = 'hero-oak'; ho.setAttribute('aria-hidden', 'true');
+      ho.innerHTML = rail.innerHTML.replace(/id="([^"]+)"/g, 'id="$1-m"').replace(/url\(#([^)]+)\)/g, 'url(#$1-m)').replace(/href="#([^"]+)"/g, 'href="#$1-m"');
+      var sv = ho.querySelector('svg.branch'); if (sv) sv.setAttribute('preserveAspectRatio', 'xMaxYMax meet');
+      $('hero').appendChild(ho);
+    }
     $('copyright').textContent = '© ' + new Date().getFullYear() + ' ' + d.name;
     $('footer-note').textContent = d.footer || '';
 
