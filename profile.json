@@ -106,7 +106,7 @@
       "group": "work",
       "tile": {
         "title": "Career & ventures",
-        "meta": "2004 → now",
+        "meta": "2004 onwards",
         "teaser": "Citigroup, European Financial Group (EFG), Himalayan People, GreenPeople.earth and Green Intelligence.",
         "w": 4,
         "h": 2,
@@ -114,7 +114,7 @@
         "tone": "light"
       },
       "panel": {
-        "kicker": "Career & ventures · 2004 → now",
+        "kicker": "Career & ventures · 2004 onwards",
         "title": "Following the frontier, then building there"
       },
       "blocks": [
@@ -122,12 +122,12 @@
           "type": "rows",
           "items": [
             {
-              "when": "2022 – now",
+              "when": "2022 onwards",
               "title": "GreenPeople.earth · Founder Director",
               "text": "Data, data intelligence and fintech for environmental markets. Built Green Intelligence, an AI project-data environment that maps renewable, nature-based carbon and environmental projects against markets, regulations and registries."
             },
             {
-              "when": "2013 – now",
+              "when": "2013 onwards",
               "title": "Five Benches · Founder Director",
               "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe. Through Himalayan People I gave Chamba Chukh, a chilli preserve made by a remote community of chilli growers and women's self-help groups, its digital identity and built its supply chain from the villages to export and e-commerce markets.",
               "tags": [
@@ -137,7 +137,7 @@
               ]
             },
             {
-              "when": "2012 – 2013",
+              "when": "2012 onwards",
               "title": "Trading digital assets and working on distributed systems",
               "text": "Trading and experimenting with Bitcoin and other digital assets while researching distributed systems: white papers on data harvesting, intelligence and consensus for proof-of-truth systems, and DLT use cases in finance, supply chains and data validation."
             },
@@ -160,7 +160,7 @@
       "group": "work",
       "tile": {
         "title": "Policy & leadership",
-        "meta": "2023 → now",
+        "meta": "2023 onwards",
         "teaser": "ESG advisory in Westminster, talks in Verbier, Namibia, Helsinki and Singapore, lectures to graduate students in London, and a roundtable at the WEF in Davos.",
         "w": 4,
         "h": 2,
@@ -168,7 +168,7 @@
         "tone": "dark"
       },
       "panel": {
-        "kicker": "Policy & leadership · 2023 → now",
+        "kicker": "Policy & leadership · 2023 onwards",
         "title": "From the market to Parliament"
       },
       "blocks": [
@@ -572,23 +572,25 @@
             {
               "label": "Father",
               "title": "Medicine",
-              "text": "Oncologist and retired Principal of the Medical College in Shimla. Founder Head of the Regional Cancer Centre, and now a campaigner for awareness of lifestyle diseases."
+              "text": "Oncologist and retired Principal of the Medical College, Shimla. Founder Head of the Regional Cancer Centre and a campaigner for awareness of lifestyle diseases."
             },
             {
               "label": "Mother",
               "title": "Law",
-              "text": "Educated in law, a retired judge and former Secretary of the Himachal Pradesh Legal Aid Board. She now serves on ethics boards and committees at academic institutions in the state."
+              "text": "Lawyer, retired judge and former Secretary of the Himachal Pradesh Legal Aid Board. Serves on ethics boards and committees at academic institutions."
             },
             {
               "label": "Brother",
               "title": "Writing & enterprise",
-              "text": "Published writer and poet, former market researcher and creative director. Co-founder of Five Benches, the enterprise helping Himalayan makers create market-ready products."
+              "text": "Published writer and poet, former market researcher and creative director. Co-founder of Five Benches, helping Himalayan makers create market-ready products."
+            },
+            {
+              "label": "Partner",
+              "title": "Digital transformation",
+              "text": "Specialist in digital transformation, with leadership roles including Global Head of Digital Strategy and Head of Product, and software consulting for world-leading organisations. Passionate about animal welfare."
             }
-          ]
-        },
-        {
-          "type": "p",
-          "text": "My partner is a software consultant, and we live between London and Shimla."
+          ],
+          "cols": 2
         },
         {
           "type": "p",
@@ -628,12 +630,12 @@
           "type": "rows",
           "items": [
             {
-              "when": "2025 – now",
+              "when": "2025 onwards",
               "title": "Catalyst Now · Co-Chair, Digital Collaborative",
               "text": "A global movement of social innovators working towards the 2030 Sustainable Development Goals."
             },
             {
-              "when": "2013 – now",
+              "when": "2013 onwards",
               "title": "Women's self-help groups, Himachal Pradesh",
               "text": "Organising supply, production systems and market access for rural producers."
             },
