@@ -532,7 +532,13 @@
             },
             {
               "title": "Village to market stalls",
-              "text": "Helping weavers move from craft to repeatable production, then flying to London to run market stalls in Hampstead, Marylebone, Spitalfields, Chelsea and beyond, pitching the product and selling it face to face."
+              "text": "Helping weavers move from craft to repeatable production, then flying to London to run market stalls in Hampstead, Marylebone, Spitalfields, Chelsea and beyond, pitching the product and selling it face to face.",
+              "links": [
+                {
+                  "label": "Woolaah",
+                  "url": "https://woolaah.com/"
+                }
+              ]
             },
             {
               "title": "St. Gallen and Trondheim",
