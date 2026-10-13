@@ -15,7 +15,7 @@
     },
     {
       "label": "greenpeople.earth",
-      "url": "https://www.greenpeople.earth"
+      "url": "https://greenpeople.earth"
     }
   ],
   "workNote": "Open to partnerships built on shared value.",
@@ -1043,5 +1043,23 @@
     ],
     "fallback": "Good question. Better Anuj picks this one up himself.",
     "handoff": "I've passed this to Anuj. He'll reply to {email}."
-  }
+  },
+  "autolinks": [
+    {
+      "text": "Green Intelligence",
+      "url": "https://greenintelligence.earth"
+    },
+    {
+      "text": "GreenPeople.earth",
+      "url": "https://greenpeople.earth"
+    },
+    {
+      "text": "Carbon market solutions",
+      "url": "https://app.greenpeople.earth"
+    },
+    {
+      "text": "carbon market and environmental projects",
+      "url": "https://app.greenpeople.earth"
+    }
+  ]
 }

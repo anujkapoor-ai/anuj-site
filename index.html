@@ -212,6 +212,10 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 @media (max-width: 520px) { .rows li { grid-template-columns: 1fr; gap: 2px; } }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .tag { font: 14px var(--body); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; color: var(--ink); }
+.tag-link { color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); text-decoration: none; }
+.tag-link:hover { background: color-mix(in srgb, var(--accent) 12%, var(--paper)); }
+a.auto { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+a.auto:hover { color: var(--accent-ink); }
 .groups { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
 @media (max-width: 600px) { .groups { grid-template-columns: 1fr; } }
 .groups h3 { font: 600 15px var(--body); color: var(--accent-ink); margin: 0; }
@@ -443,7 +447,23 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     return el;
   }
   function $(id) { return document.getElementById(id); }
-  function tagList(items) { return h('div', { class: 'tags' }, items.map(function (t) { return h('span', { class: 'tag', text: t }); })); }
+  // Named things listed under "autolinks" in profile.json become links wherever they appear in a panel.
+  function autolinkFor(phrase) { var al = (window.__profile && window.__profile.autolinks) || []; for (var i = 0; i < al.length; i++) if (al[i].text.toLowerCase() === phrase.toLowerCase()) return al[i].url; return null; }
+  function linkify(text) {
+    var al = (window.__profile && window.__profile.autolinks) || [], out = [String(text)];
+    al.forEach(function (l) {
+      var next = [];
+      out.forEach(function (piece) {
+        if (typeof piece !== 'string') { next.push(piece); return; }
+        var i = piece.toLowerCase().indexOf(l.text.toLowerCase());
+        if (i === -1) { next.push(piece); return; }
+        next.push(piece.slice(0, i), h('a', { href: l.url, target: '_blank', rel: 'noopener', class: 'auto', text: piece.substr(i, l.text.length) }), piece.slice(i + l.text.length));
+      });
+      out = next;
+    });
+    return out.filter(function (x) { return x !== ''; });
+  }
+  function tagList(items) { return h('div', { class: 'tags' }, items.map(function (t) { var u = autolinkFor(t); return u ? h('a', { class: 'tag tag-link', href: u, target: '_blank', rel: 'noopener', text: t + ' ↗' }) : h('span', { class: 'tag', text: t }); })); }
 
   /* Illustrations: fixed drawings, one per subject, in the accent colour */
   var MOTIFS = {
@@ -469,17 +489,17 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
 
   var blocks = {
     lede: function (b) { return h('p', { class: 'lede', text: b.text }); },
-    p: function (b) { return h('p', { class: b.muted ? 'muted' : null, text: b.text }); },
+    p: function (b) { return h('p', { class: b.muted ? 'muted' : null }, linkify(b.text)); },
     chain: function (b) { var kids = []; b.items.forEach(function (t, i) { if (i) kids.push(h('i', { text: '→' })); kids.push(h('span', { text: t })); }); return h('div', { class: 'chain' }, kids); },
     rows: function (b) {
       return h('ul', { class: 'rows' }, b.items.map(function (r) {
-        return h('li', null, [h('span', { class: 'when', text: r.when || '' }), h('span', null, [h('strong', { text: r.title }), r.text ? h('span', { class: 'sub', text: r.text }) : null, r.tags ? tagList(r.tags) : null])]);
+        return h('li', null, [h('span', { class: 'when', text: r.when || '' }), h('span', null, [h('strong', null, linkify(r.title)), r.text ? h('span', { class: 'sub' }, linkify(r.text)) : null, r.tags ? tagList(r.tags) : null])]);
       }));
     },
     cards: function (b) {
       return h('div', { class: 'cards2' }, b.items.map(function (c) {
         var t = c.url ? h('a', { href: c.url, target: '_blank', rel: 'noopener', text: c.title + ' ↗' }) : c.title;
-        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', null, [t]), c.text ? h('p', { text: c.text }) : null,
+        return h('div', { class: 'mini' }, [c.label ? h('span', { class: 'yr', text: c.label }) : null, h('h3', null, [t]), c.text ? h('p', null, linkify(c.text)) : null,
           c.links ? h('p', { class: 'mini-links' }, c.links.map(function (l) { return h('a', { href: l.url, target: '_blank', rel: 'noopener', text: l.label + ' ↗' }); })) : null]);
       }));
     },
