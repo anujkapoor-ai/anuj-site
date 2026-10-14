@@ -52,7 +52,7 @@
         },
         {
           "type": "p",
-          "text": "From peer-to-peer economic systems and decentralised communication platforms to the semantic web and digital intelligence, I look to spot each evolutionary step in technology early, learn its economic and social impact in depth, then put it to work where it can make a difference: in a Himalayan village, in a gamified augmented-reality world, in natural assets, in renewable energy infrastructure, inside an AI system and in policy."
+          "text": "From peer-to-peer economic systems and decentralised communication platforms to the semantic web and digital intelligence (from 2018), I look to spot each evolutionary step in technology early, learn its economic and social impact in depth, then put it to work where it can make a difference: in a Himalayan village, in a gamified augmented-reality world, in natural assets, in renewable energy infrastructure, inside an AI system and in policy."
         },
         {
           "type": "groups",
@@ -123,16 +123,30 @@
             {
               "when": "2022 onwards",
               "title": "GreenPeople.earth · Founder Director",
-              "text": "Data, data intelligence and fintech for environmental markets. Built Green Intelligence, an AI project-data environment that maps renewable, nature-based carbon and environmental projects against markets, regulations and registries."
+              "text": "Data, data intelligence and fintech for environmental markets. Built Green Intelligence, an AI project-data environment that maps renewable, nature-based carbon and environmental projects against markets, regulations and registries.",
+              "tags": [
+                "Green Intelligence",
+                "Green Ledger"
+              ]
             },
             {
               "when": "2013 onwards",
               "title": "Five Benches · Founder Director",
-              "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe. Through Himalayan People I gave Chamba Chukh, a chilli preserve made by a remote community of chilli growers and women's self-help groups, its digital identity and built its supply chain from the villages to export and e-commerce markets.",
+              "text": "Supply chains for provenance-rich goods from the lower Himalayas, built with villages and women's self-help groups: production systems, digital identity, e-commerce, logistics and direct sales in London and Europe.",
               "tags": [
                 "Himalayan People · textiles",
                 "Palampore Tea",
                 "Himachilli · foods"
+              ],
+              "subs": [
+                {
+                  "title": "Himalayan chilli farmers",
+                  "text": "Through Himalayan People I gave Chamba Chukh, a chilli preserve made by a remote community of chilli growers and women's self-help groups, its digital identity, and built its supply chain from the villages to export and e-commerce markets."
+                },
+                {
+                  "title": "A digital brand for Himalayan weavers",
+                  "text": "Woolaah: handcrafted products made by master weavers working with rural Himalayan women's self-help groups, in pure wool and silk, dyed by hand with eco-friendly dyes."
+                }
               ]
             },
             {
@@ -147,7 +161,7 @@
             },
             {
               "when": "2004 – 2008",
-              "title": "Citigroup EMEA Treasury · Resident Vice President",
+              "title": "Citigroup EMEA Treasury, London · Resident Vice President",
               "text": "Structured and traded cross-asset derivatives for Citigroup's EMEA businesses."
             }
           ]
@@ -1065,6 +1079,18 @@
     {
       "text": "Festive People",
       "url": "https://festivepeople.com/"
+    },
+    {
+      "text": "Chamba Chukh",
+      "url": "https://en.wikipedia.org/wiki/Chamba_chukh"
+    },
+    {
+      "text": "Woolaah",
+      "url": "https://woolaah.com/"
+    },
+    {
+      "text": "Green Ledger",
+      "url": "https://greenpeople.earth/green-ledger-1"
     }
   ]
 }

@@ -212,6 +212,9 @@ h1 { color: var(--ink); font-family: var(--display); font-weight: 600; font-size
 @media (max-width: 520px) { .rows li { grid-template-columns: 1fr; gap: 2px; } }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 .tag { font: 14px var(--body); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; color: var(--ink); }
+.rows .subs { display: grid; gap: 8px; margin: 8px 0 2px; }
+.rows .subsec { display: block; padding-left: 12px; border-left: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); color: var(--muted); font-size: .95em; }
+.rows .subsec b { display: block; color: var(--ink); font-weight: 600; }
 .tag-link { color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 55%, var(--line)); text-decoration: none; }
 .tag-link:hover { background: color-mix(in srgb, var(--accent) 12%, var(--paper)); }
 a.auto { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
@@ -495,7 +498,7 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     chain: function (b) { var kids = []; b.items.forEach(function (t, i) { if (i) kids.push(h('i', { text: '→' })); kids.push(h('span', { text: t })); }); return h('div', { class: 'chain' }, kids); },
     rows: function (b) {
       return h('ul', { class: 'rows' }, b.items.map(function (r) {
-        return h('li', null, [h('span', { class: 'when', text: r.when || '' }), h('span', null, [h('strong', null, linkify(r.title)), r.text ? h('span', { class: 'sub' }, linkify(r.text)) : null, r.tags ? tagList(r.tags) : null])]);
+        return h('li', null, [h('span', { class: 'when', text: r.when || '' }), h('span', null, [h('strong', null, linkify(r.title)), r.text ? h('span', { class: 'sub' }, linkify(r.text)) : null, r.subs ? h('span', { class: 'subs' }, r.subs.map(function (s) { return h('span', { class: 'subsec' }, [h('b', { text: s.title }), h('span', null, linkify(s.text))]); })) : null, r.tags ? tagList(r.tags) : null])]);
       }));
     },
     cards: function (b) {
