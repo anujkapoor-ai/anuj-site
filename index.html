@@ -782,16 +782,18 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
     var send = $('msg-send'); send.disabled = true; send.textContent = 'Sending…';
     fetch(msgContact.endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ name: name, email: email, message: text, _subject: 'New message from your website: ' + name, _template: 'table', _captcha: 'false' }) })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) { var e = new Error(j.message || r.status); e.info = j; throw e; } return j; }); })
       .then(function (res) {
-        if (res && (res.success === false || res.success === 'false')) throw new Error('rejected');
+        if (res && (res.success === false || res.success === 'false')) { var e = new Error(res.message || 'rejected'); e.info = res; throw e; }
         if (reply) bubble('them', reply);
         bubble('them', (msgContact.handoff || 'Thanks, your message is on its way to Anuj. He will reply to {email}.').replace('{email}', email));
         $('msg-text').value = '';
       })
-      .catch(function () {
+      .catch(function (err) {
+        if (window.console) console.warn('Message service:', err && err.message, err && err.info);
         var addr = (window.__profile && window.__profile.email) || '';
-        bubble('them', 'Sorry, that did not send. You can email me directly at', addr ? { href: 'mailto:' + addr, text: addr } : null);
+        var mail = addr ? 'mailto:' + addr + '?subject=' + encodeURIComponent('Message from your website: ' + name) + '&body=' + encodeURIComponent(text + '\n\n' + name + ' <' + email + '>') : '';
+        bubble('them', 'Sorry, the message box is having a moment. Your note is safe: you can', mail ? { href: mail, text: 'send it by email instead' } : null);
       })
       .then(function () { send.disabled = false; send.textContent = 'Send'; });
   });
