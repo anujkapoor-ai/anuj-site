@@ -1056,7 +1056,7 @@
         "a": "The tiles here cover most of it, and LinkedIn has the rest. If you need something specific, Anuj can send it."
       }
     ],
-    "fallback": "Good question. Better Anuj picks this one up himself.",
+    "fallback": "Interesting. Better Anuj picks this one up himself.",
     "handoff": "I've passed this to Anuj. He'll reply to {email}."
   },
   "autolinks": [
