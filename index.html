@@ -455,7 +455,10 @@ footer { margin-top: 28px; font: 12.5px var(--mono); color: var(--muted); displa
   // Named things listed under "autolinks" in profile.json become links wherever they appear in a panel.
   function autolinkFor(phrase) { var al = (window.__profile && window.__profile.autolinks) || []; for (var i = 0; i < al.length; i++) if (al[i].text.toLowerCase() === phrase.toLowerCase()) return al[i].url; return null; }
   function linkify(text) {
-    var al = (window.__profile && window.__profile.autolinks) || [], out = [String(text)];
+    // Inline links written as [words](https://…) come first; named autolinks fill in the rest.
+    var al = (window.__profile && window.__profile.autolinks) || [], out = [], src = String(text), re = /\[([^\]]+)\]\((https?:[^)\s]+)\)/g, m, last = 0;
+    while ((m = re.exec(src))) { out.push(src.slice(last, m.index), h('a', { href: m[2], target: '_blank', rel: 'noopener', class: 'auto', text: m[1] })); last = re.lastIndex; }
+    out.push(src.slice(last));
     al.forEach(function (l) {
       var next = [];
       out.forEach(function (piece) {
