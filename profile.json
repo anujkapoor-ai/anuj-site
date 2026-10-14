@@ -106,15 +106,14 @@
       "group": "work",
       "tile": {
         "title": "Career & ventures",
-        "meta": "2004 onwards",
-        "teaser": "Citigroup, European Financial Group (EFG), Himalayan People, GreenPeople.earth and Green Intelligence.",
+        "teaser": "Citigroup, European Financial Group (EFG), Himalayan People, GreenPeople.earth, Green Intelligence and Green Ledger.",
         "w": 4,
         "h": 2,
         "motif": "ascent",
         "tone": "light"
       },
       "panel": {
-        "kicker": "Career & ventures · 2004 onwards",
+        "kicker": "Career & ventures",
         "title": "Following the frontier, then building there"
       },
       "blocks": [
@@ -160,7 +159,6 @@
       "group": "work",
       "tile": {
         "title": "Policy & leadership",
-        "meta": "2023 onwards",
         "teaser": "ESG advisory in Westminster, talks in Verbier, Namibia, Helsinki and Singapore, lectures to graduate students in London, and a roundtable at the WEF in Davos.",
         "w": 4,
         "h": 2,
@@ -168,7 +166,7 @@
         "tone": "dark"
       },
       "panel": {
-        "kicker": "Policy & leadership · 2023 onwards",
+        "kicker": "Policy & leadership",
         "title": "From the market to Parliament"
       },
       "blocks": [
@@ -379,7 +377,6 @@
       "tile": {
         "title": "Publications",
         "teaser": "Entrepreneurship, distributed systems, AI start-ups, Bitcoin, Himalayan producers and novel economic systems.",
-        "meta": "2012 → 2020",
         "w": 5,
         "h": 3,
         "motif": "text",
@@ -401,7 +398,7 @@
             {
               "title": "Novel Economic Systems & Smart Money",
               "source": "Data Driven Investor · 27 May 2020",
-              "url": "https://www.datadriveninvestor.com/2020/05/27/a-novel-economic-system-to-respond-to-the-novel-coronavirus/",
+              "url": "https://medium.com/datadriveninvestor/dd0f96c9813c",
               "text": "Economics as an emergent system: smart economies and new ways of managing currency.",
               "featured": true
             },
