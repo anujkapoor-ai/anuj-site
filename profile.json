@@ -390,15 +390,22 @@
       "blocks": [
         {
           "type": "lede",
-          "text": "From 2012 to 2020, on Bitcoin, smart money, entrepreneurship and a good deal of tea."
+          "text": "On AI, Bitcoin, smart money, entrepreneurship and a good deal of tea."
         },
         {
           "type": "list",
           "items": [
             {
+              "title": "The Chicken-and-Egg Question of Responsible Innovation",
+              "source": "Data Driven Investor · Medium",
+              "url": "https://medium.com/datadriveninvestor/dd0f96c9813c",
+              "text": "Is moral clarity a prerequisite for artificial intelligence, or an outcome of it?",
+              "featured": true
+            },
+            {
               "title": "Novel Economic Systems & Smart Money",
               "source": "Data Driven Investor · 27 May 2020",
-              "url": "https://medium.com/datadriveninvestor/dd0f96c9813c",
+              "url": "https://www.datadriveninvestor.com/2020/05/27/a-novel-economic-system-to-respond-to-the-novel-coronavirus/",
               "text": "Economics as an emergent system: smart economies and new ways of managing currency.",
               "featured": true
             },
