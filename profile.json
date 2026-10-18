@@ -88,8 +88,10 @@
               "title": "Policy & strategy",
               "tags": [
                 "ESG policy advisory",
-                "Parliamentary advisory",
-                "Sustainability leadership"
+                "Parliamentary think tank",
+                "Sustainability leadership",
+                "Digital inclusion",
+                "Distributed systems"
               ]
             }
           ]
@@ -181,7 +183,7 @@
       },
       "panel": {
         "kicker": "Policy & leadership",
-        "title": "From the market to Parliament"
+        "title": "From markets to policy advisory"
       },
       "blocks": [
         {
@@ -211,14 +213,14 @@
           "kind": "talks",
           "items": [
             {
-              "when": "Roundtable",
-              "title": "World Economic Forum",
-              "text": "Roundtable on sustainable jobs in the AI economy."
-            },
-            {
               "when": "Talk",
               "title": "United Nations Office for Disaster Risk Reduction (UNDRR)",
               "text": "Presentation on using technology to create natural assets in Africa, at the Africa Regional Platform for Disaster Risk Reduction (AfRP-9) in Windhoek, Namibia, organised with the African Union Commission."
+            },
+            {
+              "when": "Roundtable",
+              "title": "World Economic Forum",
+              "text": "Roundtable on sustainable jobs in the AI economy."
             },
             {
               "when": "Roundtable",
@@ -252,8 +254,8 @@
             },
             {
               "when": "Podcast",
-              "title": "Deanna's Dialogues, Faegre Drinker (California, USA)",
-              "text": "Navigating carbon sustainability: compliance and voluntary carbon markets."
+              "title": "Deanna's Dialogues, a Faegre Drinker Podcast (California, USA)",
+              "text": "Interviewed on the podcast to discuss navigating carbon sustainability: compliance and voluntary carbon markets."
             }
           ]
         },
