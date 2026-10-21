@@ -3,7 +3,7 @@
   "places": [],
   "roleLine": "Venture Builder",
   "thesis": {
-    "text": "I go where technology is rewriting economics and markets,",
+    "text": "I track where technology is rewriting economics and markets,",
     "emphasis": "and build there."
   },
   "strap": "Right now that means making a forest as legible to markets as a bond, threading solar energy systems with a distributed platform, putting Himalayan supply chains on digital rails, and building digital intelligence that lets a small team move at the scale of an institution. Trained as a digital economist, banker and product builder, wired as a founder, and drawn into policy and strategy to help design the rules that best guide future systems, I spend half my time contemplating emerging technologies and the other half helping build them.",
@@ -27,7 +27,7 @@
       "tile": {
         "title": "About me",
         "meta": "The short version",
-        "teaser": "Having built products and ventures across domains for over twenty years, I have honed a system for adapting quickly to emerging innovations, to create value and help solve real-world problems. I believe it is crucial to keep an adaptive working model of the world that stays current even as technology changes exponentially.",
+        "teaser": "Having built products and ventures across domains for over twenty years, I have honed a system of adapting quickly to emerging innovations and creating value by helping solve real-world problems. I believe it is crucial to keep an adaptive working model of the world that stays current even as technology changes exponentially.",
         "w": 4,
         "h": 2,
         "motif": "contour",
@@ -937,6 +937,11 @@
         },
         {
           "type": "email"
+        },
+        {
+          "type": "p",
+          "muted": true,
+          "text": "Where to visit me: [2 Eastbourne Terrace, Paddington, London W2 6LG](https://www.google.com/maps/search/?api=1&query=2+Eastbourne+Terrace+London+W2+6LG)"
         }
       ]
     }
@@ -1044,9 +1049,12 @@
           "london",
           "india",
           "africa",
-          "meet"
+          "meet",
+          "office",
+          "address",
+          "visit"
         ],
-        "a": "Anuj is based in London and works on projects in India, the UK and several countries in Africa."
+        "a": "Anuj is based in London, with an office at 2 Eastbourne Terrace, Paddington, London W2 6LG. He works on projects in India, the UK and several countries in Africa."
       },
       {
         "keys": [
